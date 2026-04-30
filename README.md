@@ -1,2377 +1,1882 @@
-# 📚 ITK Unit 1: Condensed Notes for Quick Revision
+# UNIT – II: RPA Platforms
+## Exam Preparation Notes (Simple & Detailed)
 
 ---
 
-## I. CULTURE
-- **Origin**: Latin *Cultura* = cultivation/refinement
-- **Definition**: Total intellectual, spiritual, moral, artistic achievements of society
-- **Includes**: Beliefs, values, customs, traditions, language, religion, art, social behavior
-- **Tylor's Definition**: "Complex whole" of knowledge, belief, art, morals, law, customs acquired as society members
-- **Key Features**:
-  - 🎓 Learned (not biological)
-  - 👥 Shared by group
-  - 🔣 Symbolic (rituals, art, language)
-  - 🔄 Transmitted across generations
-  - 🌱 Dynamic & adaptive
-- **Example**: *Namaste* = humility + spiritual values
+## 1. Components of RPA
+
+### What are the Core Components of Any RPA Platform?
+
+| Component | Purpose | Simple Explanation |
+|-----------|---------|------------------|
+| **Recorder** | Records user actions on screen | Like a macro recorder in Excel - captures mouse clicks and keyboard typing so robot can replay them |
+| **Development Studio** | Where developers create robot instructions | Visual tool to design workflows using drag-and-drop activities (no heavy coding needed) |
+| **Plugin/Extension** | Helps robot interact with special applications | Extra tools for apps like Java, SAP where normal methods don't work well |
+| **Bot Runner (Robot)** | Executes the automated tasks | The actual "worker" that runs the process you designed |
+| **Control Center** | Manages and monitors all robots | Central dashboard to start/stop robots, schedule tasks, manage licenses |
+
+### Why These Components Matter:
+- **Recorder** → Makes automation fast and easy (big reason for RPA popularity)
+- **Studio** → Lets non-programmers build robots visually
+- **Extensions** → Solves tough UI recognition problems
+- **Robot** → Does the actual work automatically
+- **Control Center** → Manages many robots at enterprise scale
 
 ---
 
-## II. CIVILIZATION
-- **Definition**: Advanced social development stage → urbanization, governance, science, art, institutions
-- **Nature**: More materialistic/external vs culture
-- **Characteristics**:
-  - 🏛️ Organized political systems
-  - 🏙️ Cities & infrastructure
-  - ✍️ Written language
-  - 💰 Economic organization
-  - ⚙️ Technological progress
-- **Example**: Mohenjo-daro city planning = civilization; Vedic philosophy = culture
+## 2. RPA Platforms (Major Vendors)
+
+### Comparison of Key RPA Platforms:
+
+| Platform | Headquarters | Founded | CEO | Key Clients | Best For |
+|----------|-------------|---------|-----|-------------|----------|
+| **Automation Anywhere** | San Jose, USA | 2003 | Mihir Shukla | Deloitte, Accenture, AT&T, JPMorgan | Structured + unstructured data, cognitive automation |
+| **UiPath** | Bucharest, Romania | - | Daniel Dines | Atos, AXA, BBC, SAP, Cognizant | Visual development, easy learning curve |
+| **Blue Prism** | United Kingdom | 2001 | Alastair Bathgate | BNY Mellon, RWE npower, Telefonica | Enterprise-scale, centrally managed automation |
+| **WorkFusion** | New York, USA | 2011 | Max Yangkelivich, Andrew Volkov | Thomson Reuters, Citi, Standard Bank | High-volume data + machine learning |
+| **Thoughtonomy** | London, UK | 2013 | Terry Walby | Atos, Fujitsu, CGI, BT | Custom automation using Blue Prism + others |
+| **KOFAX** | Irvine, California | - | Paul Rooke | Arrow Electronics, Delta Dental, Audi | Repetitive rule-based tasks, task prioritization |
+
+### Revenue & Market Focus (Quick Reference):
+
+**Automation Anywhere:**
+- Top market: USA (>50% revenue)
+- Top industry: BFSI (Banking, Financial Services, Insurance)
+
+**UiPath:**
+- Markets: North America, Europe, UK, APAC
+- Industries: BFSI, Healthcare, Telecom, Retail
+
+**Blue Prism:**
+- Top market: UK (>50% revenue)
+- Industries: BFSI, Health, Retail, Telecom, Manufacturing, Public Sector
+
+**WorkFusion:**
+- Top market: North America (>80% revenue)
+- Top industry: BFSI (~90% revenue)
+
+**KOFAX:**
+- Top market: North America (~50% revenue)
+- Industries: BFSI, Retail, Travel, Manufacturing, Healthcare
+
+> 📌 **Exam Tip**: Remember: UiPath = visual/easy; Blue Prism = enterprise/centralized; Automation Anywhere = cognitive/data-focused
 
 ---
 
-## III. CULTURE vs CIVILIZATION (Quick Table)
+## 3. About UiPath
 
-| Basis | Culture | Civilization |
-|-------|---------|-------------|
-| **Nature** | Internal (values/beliefs) | External (institutions/infrastructure) |
-| **Focus** | Moral & spiritual growth | Material & technological growth |
-| **Change** | Slow & continuous | Rapid & progressive |
-| **Example** | Dharma philosophy | Indus city urban planning |
+### Company Overview:
+- **Headquarters**: Bucharest, Romania
+- **CEO**: Daniel Dines
+- **Global Offices**: London, Tokyo, Paris, Singapore, Melbourne, Hong Kong, Bengaluru
+- **Growth**: Rapid expansion in revenue and workforce
 
----
+### UiPath Platform Components:
 
-## IV. HERITAGE
-- **Definition**: Traditions, monuments, languages, art, knowledge inherited from past generations
-- **Types**:
-  - 🏛️ **Tangible**: Monuments, temples, manuscripts → *Ajanta Caves*
-  - 🎭 **Intangible**: Folk music, classical dance, oral traditions → *Bharatanatyam*
-- **Importance**:
-  - Preserves national identity
-  - Strengthens unity
-  - Boosts tourism & global recognition
-  - Connects present with past
+| Component | Purpose | Key Features |
+|-----------|---------|-------------|
+| **UiPath Studio** | Design automation processes | Visual flowchart interface, drag-and-drop activities, recorder, error highlighting |
+| **UiPath Robot** | Execute designed processes | Works in attended (human-triggered) and unattended (auto-run) modes |
+| **UiPath Orchestrator** | Manage and monitor robots | Web-based, deploy multiple robots, schedule tasks, manage queues, store logs |
 
----
+### UiPath Editions:
 
-## V. INTERRELATIONSHIP (Culture-Civilization-Heritage)
-```
-Culture → Values, beliefs, spiritual ethos
-     ↓
-Civilization → Material/institutional framework (cities, writing, governance)
-     ↓
-Heritage → Bridge carrying both forward (tangible + intangible)
-```
-- **Without culture**: Civilization loses ethics
-- **Without civilization**: Culture lacks infrastructure
-- **Without heritage**: Both forgotten
-- **Example**: Vedic culture → Mauryan/Gupta civilization → Vedas/stupas/inscriptions preserved as heritage
+| Edition | Best For | Key Features |
+|---------|----------|-------------|
+| **Enterprise Edition** | Large companies scaling RPA | Integrated with Orchestrator, manual updates via installer |
+| **Community Edition** | Individuals, students, small businesses (<$1M revenue or <250 workstations) | Free, auto-updates, no server integration, online activation required, forum support |
 
-### Significance for Traditional Knowledge Systems (TKS)
-- **TKS Include**: Ayurveda, Yoga, Jyotisha, Vastu, Metallurgy, ecological wisdom
-- **Culture** → Worldview: Dharma, Rta (cosmic order), interconnectedness
-- **Civilization** → Practical context: Nalanda university, irrigation, Charaka Samhita
-- **Heritage** → Preserves via manuscripts, oral lineages, inscriptions, art
-- **Key Insight**: TKS = integrated system (philosophy + application + transmission)
+> ⚠️ **Note**: Community Edition is for learning only - commercial use requires paid license (contact sales@uipath.com)
 
 ---
 
-## VI. PRESERVATION MECHANISMS
+## 4. The Future of Automation
 
-### A. Oral Traditions
-- Knowledge memorized/recited before writing
-- **Vedas**: Transmitted orally via precise phonetic recitation (*Shakhas*)
-- **Categories**: Srutis (heard), Smritis (remembered), Sutras (aphorisms)
-- **Techniques**: Mnemonics, rhyming, chanting, guru-shishya parampara
-- **Example**: Rig Veda recited verbatim for millennia
+### Key Concepts:
 
-### B. Scriptures (Written/Memorized Corpus)
-| Text | Content |
-|------|---------|
-| **Vedas** (Rig, Yajur, Sama, Atharva) | Hymns, rituals, cosmology |
-| **Upanishads** | Metaphysics: Brahman/Atman |
-| **Epics** (Ramayana, Mahabharata) | Moral codes, statecraft, dharma |
-| **Puranas** | Genealogies, cosmology, folk narratives |
-| **Shastras** | Systematic treatises: Arthashastra, Kamasutra, Natyashastra |
-- **Function**: Standardized knowledge, enabled cross-regional transmission + commentary (Bhasyas)
-- **Example**: Charaka Samhita → Ayurveda preserved + expanded
+**Fourth Industrial Revolution:**
+- Technology embedded in society and human life
+- Includes: Robotics, 3D printing, nanotechnology, IoT, autonomous vehicles
+- Will fundamentally change how we live, work, and interact
 
-### C. Folklore
-- **Includes**: Folk tales, ballads, proverbs, legends, songs (oral, community-based)
-- **Preserves**: Local history, ecological knowledge, agricultural practices, ethics
-- **Forms**: Pandavani, Burra Katha, Villu Paatu, Ojapali
-- **Examples**: Bondo tribe folktales (origin myths + medicinal plants); Rajasthani ballads (warrior genealogies)
+**Impact on Jobs:**
+| Job Type | Automation Risk | Examples |
+|----------|----------------|----------|
+| **High Risk (~5% of jobs)** | Routine, repetitive, predictable tasks | Telemarketing, data entry, clerical work, retail sales, cashiers, toll booths, fast food |
+| **Medium Risk** | Partial automation (some tasks automated) | Most white-collar jobs |
+| **Low Risk** | Requires creativity, emotional intelligence, complex reasoning | Strategic roles, creative fields, healthcare, education |
 
-### D. Integrative Role
-- Scriptures ←→ Folklore ←→ Oral traditions (mutual influence)
-- **Three-tier system**: Scholars (scriptures) + Villagers (folklore) + Ritual specialists (oral)
-- **Result**: Remarkable resilience despite invasions, calamities, change
+### How to Prepare:
+✅ Focus on skills robots can't easily replace:
+- Critical thinking and problem-solving
+- Emotional intelligence and communication
+- Creativity and innovation
+- Adaptability and continuous learning
+
+✅ Education should teach "how to learn" - not just fixed knowledge
+
+> 📌 **Exam Tip**: Automation won't replace all jobs - it will change them. Humans + Robots = Better outcomes
 
 ---
 
-## VII. CHARACTERISTICS OF CULTURE (Memory Flow)
-```
-Learned → Shared → Transmitted → Symbolic → Integrated → Adaptive → Continuous
-```
-| Feature | Key Point | Example |
-|---------|-----------|---------|
-| **Learned** | Via socialization, not biological | Child learns Diwali/Eid from elders |
-| **Shared** | Common to group → creates unity | Respecting elders (Indian value) |
-| **Transmitted** | Via language, education, rituals, imitation | Carnatic music: guru-shishya |
-| **Symbolic** | Uses symbols for meaning | Flag = unity; 'Om' = spiritual truth |
-| **Integrated** | Religion, economy, politics interconnected | Religious beliefs → food/marriage customs |
-| **Adaptive** | Changes with time/environment; core values stable | Letters → digital; respect remains |
-| **Continuous** | Accumulates knowledge; builds on past | Gurukul + modern universities |
+## 5. Record and Play (Introduction)
+
+### Why Recording is Important:
+- Recording user steps + playing them back = foundation of RPA success
+- Without recording, RPA would be just another complex scripting tool
+- Makes automation accessible to non-programmers
+
+### What Recording Does:
+1. Captures mouse clicks, keyboard typing, UI interactions
+2. Converts actions into a "Recording Sequence" in UiPath Studio
+3. Robot replays these steps automatically
+
+### Two Recording Modes:
+
+| Mode | When to Use | Limitations |
+|------|-------------|-------------|
+| **Automatic Recording** | Record many steps in one go | Cannot record: hotkeys, right-click, double-click, modifier keys (Ctrl/Alt) |
+| **Manual Recording** | Record one step at a time with full control | Slower, but can record ALL actions including hotkeys, right-click, hover |
+
+### Shortcut Keys During Recording:
+| Key | Action |
+|-----|--------|
+| **F2** | Pause recording for 3 seconds (countdown shown on screen) |
+| **Right-click** | Exit recording |
+| **Esc** | Exit recording; press Esc again to save the recording |
 
 ---
 
-## VIII. IMPORTANCE OF CULTURE IN HUMAN LIFE
-- **Identity & Belonging**: Connects to community, nation, history → festivals strengthen collective identity
-- **Morality & Ethics**: Defines right/wrong; values: honesty, respect, compassion
-- **Social Harmony**: Common norms reduce conflict; joint families → cooperation
-- **Creativity & Expression**: Inspires art, music, literature, architecture → Kathak, Taj Mahal
-- **Continuity of Knowledge**: Preserves ancient wisdom → Ayurveda in modern wellness
-- **Guides Behavior**: Sets role expectations (parent, teacher, leader); regulates customs
-- **National Development**: Cultural unity → nation-building; heritage tourism → economy; cultural diplomacy → international relations
+## 6. Downloading and Installing UiPath Studio (Step-by-Step)
+
+### Step-by-Step Installation Guide:
+
+**Step 1: Visit Community Edition Page**
+- Open browser → Go to: `https://www.uipath.com/community`
+- Click **"Get Community Edition"**
+
+**Step 2: Register Account**
+- Fill required fields:
+  - First Name*
+  - Last Name*
+  - Email* (use correct email - needed for activation)
+  - Twitter User (optional)
+- Click **"REQUEST COMMUNITY EDITION"**
+
+**Step 3: Download Installer**
+- Check your email for download link
+- OR click **"download it here"** on the confirmation page
+- Download file: `UiPathStudioSetup.exe`
+
+**Step 4: Run Installer**
+- Double-click downloaded `.exe` file
+- Wait for installation to complete
+- Click **"Start Free"** on welcome screen
+
+**Step 5: Activate Software**
+- Enter same email used for registration
+- Click **"Activate"** (online activation only for Community Edition)
+- Wait for success message → Close window
+
+**Step 6: Pin for Easy Access (Optional but Recommended)**
+- Right-click UiPath icon → "Pin to taskbar"
+- Avoids searching for `UiPath.exe` every time
+
+✅ **Installation Complete!** UiPath Studio is ready to use.
+
+> 🔐 **Important**: 
+> - Use same email for registration AND activation
+> - Community Edition requires online activation (no offline option)
+> - Auto-updates enabled by default
 
 ---
 
-## IX. CULTURAL DIVERSITY
-### Meaning
-Variety of cultural groups coexisting: differences in language, religion, customs, art, lifestyles
+## 7. Learning UiPath Studio
 
-### India's Diversity
-| Type | Details | Examples |
-|------|---------|----------|
-| **Linguistic** | 22 official languages; 1000+ dialects | Hindi, Tamil, Telugu, Bengali |
-| **Religious** | Multiple faiths coexist | Hinduism, Islam, Christianity, Sikhism, Buddhism, Jainism |
-| **Art/Dance** | Classical + regional forms | Bharatanatyam, Kathakali, folk arts |
-| **Food** | Regional dietary patterns | North: wheat; South: rice; East: fish; West: millets |
-| **Festivals** | Unique regional customs | Diwali, Eid, Christmas, Pongal, Onam |
+### Types of Projects in UiPath:
 
-### Significance
-- ✅ Promotes tolerance & mutual respect
-- ✅ Strengthens national unity ("Unity in Diversity")
-- ✅ Enriches heritage with creativity
-- ✅ Boosts global recognition & tourism
+| Project Type | Best Used For | How to Start |
+|-------------|--------------|-------------|
+| **Sequence** | Simple, linear tasks; easy debugging | Start tab → Blank → Add Sequence from toolbox |
+| **Flowchart** | Complex processes with decisions/branches | New Project menu → "Flowchart - Simple Process" |
+| **Assistant** | Attended/Front Office Robots (human-triggered) | New Project menu → "Assistant - Agent Process Improvement" |
+| **State Machine** | Large projects with finite states triggered by conditions | New Project menu → "Process - Transaction Business Process" |
+
+> 📌 **Note**: From DESIGN tab → New menu, you only see: Sequence, Flowchart, State Machine (not Assistant)
 
 ---
 
-## X. AESTHETICS
-### Meaning
-- Philosophical study of beauty, art, taste, artistic expression
-- Greek *aisthesis* = perception/sensation
+### UiPath Studio User Interface (12 Key Panels):
 
-### Indian Foundation: Saundarya Shastra ("Science of Beauty")
-- **Scope**: Beyond visual beauty → *Rasa* (emotional essence) + *Dhvani* (suggested meaning)
-- **Key Texts**: Natyashastra (Bharata), Dhvanyaloka (Anandavardhana), Abhinavabharati (Abhinavagupta)
-- **Core Principles**:
-  - Art evokes transcendent emotional state (*rasa*) in *sahrdaya* (sensitive spectator)
-  - Beauty = universal emotions (*sthayibhavas*) → aesthetic pleasure via performance
-  - *Aucitya* (propriety) = harmony + context-appropriateness
-  - Indian aesthetics: integrates moral/spiritual purification (vs Western separation of art/ethics)
+```
+┌─────────────────────────────────────┐
+│ 1. Ribbon (Top)                     │
+│ 2. Quick Access Toolbar             │
+├─────────────┬───────────────────────┤
+│ 8. Import   │ 4. Properties Panel   │
+│ 9. Activity │ 5. Outline Panel      │
+│10. Library  │ 6. Arguments Panel    │
+│11. Project  │ 7. Variables Panel    │
+├─────────────┴───────────────────────┤
+│ 3. Designer Panel (Main Workspace)  │
+├─────────────────────────────────────┤
+│12. Output Panel (Bottom)            │
+└─────────────────────────────────────┘
+```
 
-### Rasa Theory (Natyashastra) – Navarasas
-| Rasa | Meaning |
-|------|---------|
-| Shringara | Love |
-| Hasya | Laughter |
-| Karuna | Compassion |
-| Raudra | Anger |
-| Veera | Heroism |
-| Bhayanaka | Fear |
-| Bibhatsa | Disgust |
-| Adbhuta | Wonder |
-| Shanta | Peace |
+#### Panel Functions (Simple Explanation):
 
-### Spirituality Connection
-- **Goal of art**: *Moksha* (liberation); *Rasasvada* ≈ *Brahmananda* (bliss of self-realization)
-- *Shanta rasa* → detachment + inner calm → spiritual state
-- Abhinavagupta: Aesthetic consciousness = reflected universal consciousness (Brahman)
-- Temple architecture, iconography, ritual dances → elevate mind to divine contemplation
-- Music (*raga*) → spiritual moods; offered as *naivedya* (devotional offering)
-- **Example**: Morning raga Bhairav → awakens spiritual energy + prepares for meditation
-
-### Aesthetic Expressions
-- 🏛️ **Architecture**: Taj Mahal (symmetry, proportion, detailing)
-- 🎵 **Music**: Ragas evoke emotions; time/mood-specific
-- 💃 **Dance**: Mudras + facial expressions; Bharatanatyam = grace + storytelling
-- 🎨 **Sculpture/Painting**: Spiritual symbolism; mythological/royal themes
-
-### Features of Indian Aesthetic Thought
-- Emphasis on inner beauty (spiritual harmony)
-- Art as path to divine realization
-- Emotional performer-audience connection
-- Integration: art + religion + philosophy
-
-### Importance
-- Enhances cultural identity
-- Promotes creativity/innovation
-- Preserves artistic heritage
-- Provides emotional + spiritual enrichment
-
-### Dhvani Theory (Quick Add)
-- **Propounded by**: Anandavardhana (9th CE), *Dhvanyaloka*
-- **Core idea**: Highest poetry = suggested meaning (*vyangya*) beyond literal (*vacya*)
-- **Types**: Vastu dhvani (fact), Alankara dhvani (figure of speech), **Rasa dhvani** (emotional flavour – highest)
-- **Impact**: Shifted focus from ornamentation → evocative power; revolutionized Indian poetics
+| Panel | Location | Purpose |
+|-------|----------|---------|
+| **1. Ribbon** | Top | 4 tabs: START (new/open projects), DESIGN (create workflows), EXECUTE (run/debug), SETUP (publish/extensions) |
+| **2. Quick Access Toolbar** | Above Ribbon | Shortcuts to Save, Run; customizable |
+| **3. Designer Panel** | Center | Main workspace to build workflows by dragging activities |
+| **4. Properties Panel** | Right | View/edit properties of selected activity |
+| **5. Outline Panel** | Right (below Properties) | High-level view of workflow structure; drill down for details |
+| **6. Arguments Panel** | Right (below Outline) | Create arguments to pass data between workflows (In/Out/In/Out/Property) |
+| **7. Variables Panel** | Bottom-left | Create/manage variables (String, Int32, Boolean, etc.); set Scope |
+| **8. Import Panel** | Left (below Activity) | Import namespaces/packages |
+| **9. Activity Panel** | Left | Search and drag activities into Designer |
+| **10. Library Panel** | Left (below Import) | Reuse automation snippets across projects |
+| **11. Project Panel** | Left (below Library) | View project files; open in Windows Explorer |
+| **12. Output Panel** | Bottom | Shows logs, errors, warnings, debug output during execution |
 
 ---
 
-## XI. WOMEN SEERS (Rishikas)
-### Introduction
-Female sages/philosophers in Vedic period → contributed to Vedic literature + spiritual thought → evidence of women's intellectual/religious participation
+### Variables vs Arguments (Key Difference):
 
-### Role
-- Composed Vedic hymns
-- Participated in philosophical debates
-- Contributed to spiritual/metaphysical discussions
-- Preserved knowledge traditions
+| Feature | Variables | Arguments |
+|---------|-----------|-----------|
+| **Purpose** | Store data within a workflow | Pass data BETWEEN workflows |
+| **Scope** | Limited to workflow/sequence where created | Can cross workflow boundaries |
+| **Direction Property** | Not applicable | In / Out / In/Out / Property |
+| **When to Use** | Temporary data storage in one workflow | Sharing data between parent/child workflows |
 
-### Key Rishikas
-| Name | Contribution |
-|------|-------------|
-| **Gargi Vachaknavi** | Debated Yajnavalkya (Brihadaranyaka Upanishad); questioned nature of reality/existence |
-| **Maitreyi** | Discourse on immortality + self-knowledge; taught wealth ≠ eternal happiness |
-| **Lopamudra** | Rig Veda hymns; balanced spiritual knowledge + household life |
-| **Others** | Apala, Ghosha, Vishvavara → Rig Veda hymns |
-
-### Significance
-- ✅ Gender equality in early Vedic society
-- ✅ Women had access to education + spiritual knowledge
-- ✅ Ancient tradition of intellectual inclusiveness
-- ✅ Inspires modern women empowerment discussions
+> 💡 **Tip**: Rename a variable in Variables panel → it auto-updates everywhere it's used in that workflow
 
 ---
 
-## XII. INDUS CULTURE
-### Basics
-- **Timeline**: 3300–1300 BCE
-- **Location**: Indus River + tributaries
-- **Major Sites**: Harappa, Mohenjo-daro, Dholavira, Lothal
+## 8. Task Recorder (Detailed)
 
-### Urban Planning (Key Feature)
-- 🗺️ Grid-pattern streets (right-angle intersections) → centralized planning + municipal authority
-- 🧱 Standardized burnt bricks (ratio 1:2:4) → mass production + quality control
-- 🚰 Sophisticated covered drainage + inspection traps → public health + hydraulic engineering
-- 🏛️ Public structures: Great Bath (Mohenjo-daro) → ritual purification; Granaries (Harappa) → grain storage/taxation/redistribution
+### Four Types of Recording:
 
-### Economic Life
-- 🌾 Agriculture: wheat, barley
-- 🚢 Trade: Mesopotamia connections
-- ⚖️ Standardized weights/measures
-- 🏺 Crafts: beads, pottery, seals
-
-### Script & Seals
-- ✍️ Indus script: undeciphered
-- 🔖 Steatite seals: trade + identification
-- 🕉️ Pashupati Seal → suggests early Shaivism
-
-### Religious/Cultural Practices
-- 👩 Mother Goddess worship (fertility cult)
-- 🧘 Proto-Shiva figure (meditative posture)
-- 🐂 Animal symbolism: bull, elephant
-- 💎 Ornaments, beads, decorated pottery
-
-### Art & Craft
-- 🗿 Terracotta figurines
-- 🗡️ Bronze sculptures: "Dancing Girl"
-- 🔥 Skilled metallurgy
-
-### Significance
-- One of earliest urban civilizations
-- Advanced engineering knowledge
-- Organized social/economic systems
-- Influenced later Indian cultural traditions
+| Recorder | Best For | Selector Type | Output Structure | Special Notes |
+|----------|----------|---------------|-----------------|--------------|
+| **Basic** | Single-window apps, simple actions | Full Selector (all attributes) | Activities directly in Sequence | No Attach Window container |
+| **Desktop** | Desktop apps, multiple actions/windows | Partial Selector (hierarchical) | Activities inside **Attach Window** | Attach Window ensures correct window focus |
+| **Web** | Web browsers (Chrome, Firefox, etc.) | Partial Selector | Activities inside **Attach Browser** | Requires browser extension installed first |
+| **Citrix** | Remote desktop, virtual machines, Citrix | Image/Text-based selectors | Click Image, Click Text, Type activities | Only manual (single-step) recording; no auto-record |
 
 ---
 
-## XIII. INDIAN CUISINE
-### Introduction
-Rich, diverse culinary tradition → reflects geography, climate, religion, culture, history + linked to Ayurveda + regional diversity
-
-### Ayurvedic Foundation
-- **Shad Rasa (Six Tastes)** for balanced meal: Sweet, Sour, Salty, Bitter, Pungent, Astringent → maintains physical + mental health
-
-### Medicinal Spices
-| Spice | Benefit |
-|-------|---------|
-| Turmeric | Anti-inflammatory |
-| Cardamom | Aids digestion |
-| Cumin | Improves metabolism |
-| Ginger/Garlic | Immunity boosters |
-
-### Regional Diversity
-| Region | Staples | Features |
-|--------|---------|----------|
-| **North** | Wheat (chapati, naan) | Rich gravies, dairy |
-| **South** | Rice (idli, dosa) | Coconut, curry leaves |
-| **East** | Rice + fish | Sweets: rasgulla |
-| **West** | Millets, vegetarian | Jaggery, groundnuts |
-
-### Cultural/Religious Significance
-- 🙏 Food as *Prasadam* (offering to deities)
-- 🎉 Festival dishes: Modak (Ganesh Chaturthi)
-- 🕉️ Fasting foods per religious customs
-- 🤝 *Atithi Devo Bhava* (Guest is God) → hospitality
-
-### Philosophical Classification (Guna-Based)
-| Guna | Foods | Effect |
-|------|-------|--------|
-| **Sattvic** (pure) | Fresh fruits, veggies, grains, milk, nuts | Clarity, calmness, spiritual growth |
-| **Rajasic** (stimulating) | Spicy, salty, bitter, hot/sour foods | Restlessness, ambition, activity |
-| **Tamasic** (dulling) | Stale, over-processed, fermented, alcohol, meat* | Inertia, confusion, lethargy |
-*Traditional spiritual practitioners emphasize Sattvic foods prepared mindfully → cuisine = tool for mental/spiritual discipline
-
-### Thali Symbolism
-- Multiple dishes in one platter → Unity in Diversity + nutritional balance
-
-### Social Importance
-- Strengthens family bonds (shared meals)
-- Encourages community gatherings
-- Reflects agricultural/seasonal cycles
+### Installing Browser Extension (Required for Web Recording):
+1. In UiPath Studio → Click **SETUP** tab in Ribbon
+2. Click **"Setup Extensions"**
+3. Choose your browser (Chrome/Firefox/Edge)
+4. Click to install extension
+5. Restart browser if prompted
 
 ---
 
-## XIV. MARTIAL ARTS
-### Introduction
-Ancient origins → self-defense, physical training, military practice, spiritual discipline + linked to culture, temples, warrior communities
+### Recording Panel Options (After Starting Recording):
 
-### Major Forms
-| Art | Origin | Key Features |
-|-----|--------|-------------|
-| **Kalaripayattu** | Kerala | Oldest; weapons + hand-to-hand + flexibility + meditation + healing |
-| **Silambam** | Tamil Nadu | Stick-fighting; speed, agility, coordination |
-| **Gatka** | Punjab (Sikh) | Sword fighting; Nihang warriors; bravery + spiritual discipline |
-| **Malla-yuddha** | Pan-India | Ancient wrestling; strength + discipline + ethics; practiced in akhadas |
+| Button | Purpose | Example Use |
+|--------|---------|-------------|
+| **Start App / Open Browser** | Launch application or open URL | Start Notepad; Open `gmail.com` |
+| **Click** | Click/tap on UI element | Click "Submit" button; Check checkbox |
+| **Type** | Type text into field | Enter username in login box |
+| **Copy / Paste** | Copy text or paste clipboard content | Copy value from one field to another |
+| **Element / Text / Image** | Target specific UI element types | Click image icon; Get text from label |
 
-### Purpose
-- 🛡️ Self-defense + protection
-- 💪 Physical fitness + endurance
-- 🧠 Mental discipline + concentration
-- 🕉️ Spiritual growth (body-mind control)
-- ⚔️ Warfare + royal training
+#### Type Activity Settings:
+- **Empty field checkbox**: Clears existing text before typing new value
+- **Press Enter after typing**: Automatically adds Enter keypress
+- **Text property**: Can use literal text `"Hello"` or variable `userName`
 
-### Cultural Connection
-- Linked to temple rituals/festivals
-- Influenced classical dance (body control, gestures)
-- Warriors = respected societal protectors
-
-### Global Influence
-- Bodhidharma traditionally carried Indian martial + meditative practices to China → influenced Asian martial arts
-
-### Kalaripayattu + Spirituality (Expanded)
-- Based on **Marma Shastra**: 107 vital points (*marma*) where *prana* (life energy) concentrated
-- Training includes: *Dhyana* (meditation), *Pranayama* (breathing), yoga-like asanas → awaken Kundalini
-- Philosophy: Flow with opponent's energy → reflects *Advaita* (non-dual oneness)
-- **Chakras**: Strikes/massages target energy centers → heal or disable → integration with Yogic anatomy
-- Rituals: Offerings to Guru + deity (*Kalarivathukkal*) → martial training + devotion blended
-
-### Modern Relevance
-- Promotes self-defense awareness
-- Enhances physical health
-- Preserves traditional heritage
+#### Click Activity Settings:
+- **ClickType property**: Single / Double / Right-click (change in Properties panel)
 
 ---
 
-## XV. PRACTICE QUESTIONS – Quick Answers
+### Advanced UI Interactions: Input & Output Methods
 
-### 1. Unity in Diversity
-- Concept: Multiple cultures/languages/religions coexisting → contribute to single national identity
-- Contribution: Tolerance, mutual respect, enriched heritage, global recognition → strengthens integration
+#### Input Methods (How robot sends keystrokes):
+| Method | Speed | Works in Background? | Best For |
+|--------|-------|---------------------|----------|
+| **Default** | Slowest | ❌ No | Testing; when other methods fail |
+| **Simulate** | Fastest | ✅ Yes | Preferred method for most cases |
+| **Window Message** | Fast | ✅ Yes | When Simulate doesn't work; types lowercase only |
 
-### 2. Women Seers' Contributions
-- Gargi: Philosophical debates on reality; intellectual courage
-- Maitreyi: Self-knowledge > wealth; metaphysical insights
-- Lopamudra: Balanced spirituality + household life; Vedic hymns
-- Impact: Proved gender equality in education/spirituality in Vedic era
+> 🔧 **How to change**: Select Type activity → Properties panel → Check "Simulate" or "SendWindowMessages"
 
-### 3. Indus Urban Planning Insights
-- Grid streets + standardized bricks → centralized authority + organized labor
-- Drainage + Great Bath → public health + shared religious culture
-- Granaries → complex economy (storage, taxation, redistribution)
-- Overall: Advanced tech + social organization
+#### Output Methods (How robot extracts text):
+| Method | Accuracy | Speed | Extracts Position? | Works in Citrix? | Extracts Hidden Text? |
+|--------|----------|-------|-------------------|------------------|----------------------|
+| **Native** | 100% | Fast (8/10) | ✅ Yes | ❌ No | ❌ No |
+| **Full Text** | 100% | Fastest (10/10) | ❌ No | ❌ No | ✅ Yes |
+| **OCR** | ~98% | Slow (3/10) | ✅ Yes | ✅ Yes | ❌ No |
 
-### 4. Martial Arts + Spirituality
-- Kalaripayattu: Marma points + pranayama + meditation + chakra awareness → physical + spiritual integration
-- Philosophy: Advaita (oneness); training = devotion + discipline
-- Connection to Yoga: Shared concepts of prana, chakras, mind-body control
+> 🔧 **How to change**: When indicating element → Scraping window appears → Choose method
 
-### 5. Dhvani in Poetics
-- Suggested meaning (*vyangya*) > literal meaning (*vacya*)
-- Highest form: *Rasa dhvani* (emotional suggestion)
-- Impact: Shifted literary focus from ornamentation → evocative power
+#### OCR Engines Available:
+- **Microsoft OCR (MODI)**: Better for large text areas; multiple languages by default
+- **Google OCR (Tesseract)**: Better for small text; supports color inversion; filter allowed characters
+- **Abbyy OCR**: Advanced (handwriting, complex layouts); install via Manage Packages (Ctrl+P)
 
-### 6. Preserving Intangible Heritage
-- **Examples**: Bharatanatyam (mudras + bhakti), Chhau (masks + martial + epics), Sohrai painting (tribal agricultural rituals)
-- **Threats**: Loss of patrons, commercialization, weakening oral transmission
-- **Measures**: 
-  - Documentation (video, digital archives)
-  - Govt schemes (Sangeet Natak Akademi, Guru-Shishya Parampara Yojana)
-  - School curriculum integration
-  - Living heritage museums + community tourism
-  - UNESCO 2003 Convention legal protection
+> 💡 **Pro Tip**: If OCR struggles with small text, increase **Scale** property (1.5 or 2.0) in OCR activity
 
 ---
 
-## 🧠 MEMORY TIPS
-- **Culture Flow**: L-S-T-S-I-A-C (Learned, Shared, Transmitted, Symbolic, Integrated, Adaptive, Continuous)
-- **Navarasas**: SHK-RVB-BAS (Shringara, Hasya, Karuna, Raudra, Veera, Bhayanaka, Bibhatsa, Adbhuta, Shanta)
-- **Shad Rasa**: Sweet-Sour-Salty-Bitter-Pungent-Astringent (mnemonic: **S**ome **S**illy **S**nakes **B**ite **P**eople **A**lways)
-- **Three Preservation Tiers**: Scriptures (scholars) + Folklore (villagers) + Oral (specialists)
-- **Interrelationship**: Culture (values) → Civilization (structure) → Heritage (bridge)
+## 9. Step-by-Step Examples Using the Recorder
 
-# 📚 ITK Unit 2: Condensed Notes for Quick Revision
-## *Education, Aims, Subjects & Science in Ancient, Medieval & Modern India*
+### Example 1: Emptying Trash Folder in Gmail (Web Recording)
 
----
-
-## I. EDUCATION IN ANCIENT INDIA
-
-### A. Philosophical Basis & Purpose
-| Aspect | Key Point |
-|--------|-----------|
-| **Core Goal** | Self-development + Character building + Moksha (liberation) |
-| **Nature** | Value-oriented, not just informational |
-| **Knowledge View** | Sacred = Ṛta (cosmic order) + Dharma (righteous conduct) |
-| **Outcome** | Formation of ideals + Social responsibility |
-
-### B. Gurukul System (Foundation)
+#### Process Flow (6 Steps):
 ```
-Student (Śiṣya) + Guru → Residential learning → Guru-Śiṣya Paramparā
+1. Open Browser → 2. Go to gmail.com → 3. Sign In → 
+4. Locate Trash Folder → 5. Click Empty Trash → 6. Confirm
 ```
-- 🏡 **Setting**: Natural, disciplined, service-based environment
-- 🎯 **Method**: Personalized learning + Memory + Dialogue + Moral training
-- 💰 **Cost**: Free education; students served guru through chores
-- 📚 **Focus**: Vedas, ethics, physical training, practical life skills
 
-### C. Ashrama System & Lifelong Education
-| Stage | Age | Focus | Key Activities |
-|-------|-----|-------|---------------|
-| **Brahmacharya** | 5-8+ yrs | Student life | Vedas, ethics, physical training, celibacy, service |
-| **Grihastha** | Adult | Householder | Apply knowledge; family/professional duties |
-| **Vanaprastha** | Elderly | Forest dweller | Spiritual study, self-reflection, guidance |
-| **Sannyasa** | Renunciate | Liberation | Meditation, contemplation, detachment → Moksha |
+#### Detailed Recording Steps:
 
-> ✅ **Key Insight**: Education = Lifelong process adapted to individual + societal needs
+**Preparation**: Open browser and navigate to `gmail.com` (keep open)
 
-### D. Major Learning Centers & Universities
+**Step 1: Start Web Recorder**
+- In UiPath Studio → Click **Recording** icon (DESIGN tab)
+- Select **Web** recording
+- Recording panel appears with "Open Browser" option
 
-#### 1️⃣ Takshashila (Taxila) | 6th BCE – 5th CE
-| Feature | Detail |
-|---------|--------|
-| **Location** | Present-day Pakistan (Punjab) |
-| **Students** | From Persia, Greece, China, India |
-| **System** | No central exams; guru-set standards |
-| **Subjects** | Vedas, Grammar, Logic, Medicine, Surgery, Archery, Astronomy, Math, Economics, Law, Occult sciences |
-| **Famous Scholars** | Pāṇini (Grammar), Chanakya (Arthashastra), Charaka (Medicine), Jīvaka (Buddhist physician) |
-| **Decline** | Hunnic invasions → Ended by 5th CE |
+**Step 2: Record Open Browser**
+- Click **Open Browser** in recording panel
+- Highlight your already-open browser window → Click
+- (This records the browser reference; doesn't reopen it)
 
-#### 2️⃣ Nalanda Mahavihara | 5th CE (Gupta Period)
-| Feature | Detail |
-|---------|--------|
-| **Location** | Present-day Bihar |
-| **Scale** | 10,000+ students, 2,000+ teachers |
-| **Funding** | Tax-free village grants from kings |
-| **Admission** | Rigorous exam; ~20% acceptance |
-| **Curriculum** | Buddhist Tripitaka, Vedas, Logic, Grammar, Medicine, Math, Astronomy, Alchemy, Fine Arts, Philosophy |
-| **Library** | Dharma Gunj: 3 buildings (Ratnasagara, Ratnodadhi, Ratnaranjaka) → 100,000s manuscripts |
-| **Scholars** | Nāgārjuna, Āryabhaṭa, Dharmapāla, Xuanzang (Chinese pilgrim), Yijing |
-| **Destruction** | 1193 CE by Bakhtiyar Khilji; library burned for months |
+**Step 3: Record Navigation to Gmail**
+- When prompted for URL → Type `gmail.com` or `https://gmail.com`
+- Click **OK**
 
-#### 3️⃣ Other Major Centers (Quick Table)
-| Center | Location | Specialty | Period |
-|--------|----------|-----------|--------|
-| **Vikramashila** | Bihar | Tantric Buddhism | 8th-12th CE |
-| **Valabhi** | Gujarat | Law, Economics, Administration | Contemporary to Nalanda |
-| **Jagaddala** | Bengal | Buddhist Logic & Philosophy | Pala Dynasty |
-| **Mithila** | Bihar | Nyaya (Logic) & Grammar | Medieval |
+**Step 4: Record Sign In**
+- Click **Record** button in recording panel
+- In Gmail page:
+  - Click "Email or Phone" field → Type your email in UiPath prompt → Press Enter
+  - Click "NEXT" button (auto-recorded)
+  - Click password field → Type password in prompt → Click "NEXT"
+  - (For real projects: Check "Type password" checkbox for security)
 
-### E. Curriculum & Subjects (Ancient)
-```
-📖 Spiritual: Vedas, Upanishads
-🗣️ Language: Grammar (Vyākaraṇa), Linguistics
-🧠 Logic: Nyāya (reasoning, debate)
-🔭 Science: Astronomy (Jyotiṣa), Mathematics
-🌿 Medicine: Āyurveda
-🏛️ Polity: Arthaśāstra (Politics, Economics)
-🎨 Arts: Music, Dance, Ethics, Martial Sciences
-```
-> ✅ Balanced: Theoretical knowledge + Practical disciplines
+**Step 5: Locate Trash Folder**
+- Click Gmail search box → Type `in:trash` in UiPath prompt → Press Enter
+- Click "Search" button (auto-recorded)
+- Wait for Trash folder results to appear
 
-### F. Features of Ancient Education
-- 🎯 Holistic development: Intellectual + Ethical + Physical + Spiritual
-- 💬 Interactive learning: Dialogue & debate (not rote memorization)
-- 📜 Documentation: Oral → Written (Grantha tradition)
-- ♾️ Lifelong: Not restricted to childhood
+**Step 6: Empty Trash**
+- Hover over "Empty Trash now" link → Click when highlighted
+- If "Indicate Anchor" dialog appears:
+  - Click "Indicate Anchor"
+  - Click adjacent stable element (e.g., "Cancel" button) to help robot locate target
+- When confirmation dialog appears → Click "OK"
+
+**Step 7: Finish Recording**
+- Press **Esc** key → Click **"Save & Exit"**
+- In Designer panel: Rename sequence to `emptying_trash_folder` (for clarity)
+- Press **F5** to test → Robot repeats all steps automatically
+
+✅ **Result**: Gmail trash folder is emptied automatically!
 
 ---
 
-## II. EDUCATION IN MEDIEVAL INDIA
+### Example 2: Emptying Recycle Bin (Desktop Recording)
 
-### A. Historical Background
-- Islamic political rule → Blend of indigenous + Islamic educational traditions
-- Expansion beyond Vedic model → More diverse, decentralized system
-
-### B. Main Institutions
-| Institution | Type | Focus |
-|-------------|------|-------|
-| **Maktabs** | Primary schools (mosque-attached) | Basic literacy, numeracy, Quranic recitation |
-| **Madrasas** | Higher education | Theology, Fiqh (Law), Philosophy, Math, Astronomy |
-| **Pathshalas** | Traditional Hindu schools | Sanskrit texts, Poetry, Grammar, Logic, Arts |
-
-### C. Curriculum & Subjects (Medieval)
+#### Process Flow (6 Steps):
 ```
-🕌 Religious: Quranic exegesis, Hadith, Sharia (Islamic Law)
-📚 Languages: Persian, Arabic literature + Translation studies
-🧮 Sciences: Mathematics, Astronomy, Medicine (Unani)
-🎭 Arts: Music, Philosophy, Logic
-🔄 Cross-cultural: Knowledge translation between Persian/Arabic/Indian languages
+1. Go to Desktop → 2. Open Recycle Bin → 3. Click Manage Tab → 
+4. Click Empty Recycle Bin → 5. Confirm Yes → 6. Close Folder
 ```
 
-### D. Features of Medieval Education
-- 👑 Royal patronage → Spread of madrasas
-- 🗣️ Multilingual scholars → Contributed to literature + sciences
-- 🌐 Decentralized → No single governing system; diverse approaches
+#### Detailed Recording Steps:
 
----
+**Step 1: Start Desktop Recorder**
+- In UiPath Studio → Click **Recording** icon
+- Select **Desktop** recording
+- Recording panel appears
 
-## III. EDUCATION IN MODERN INDIA
+**Step 2: Record Each Action**
+1. **Go to Desktop**: Press `Windows + D` (not recorded, but not needed - next step attaches to desktop)
+2. **Open Recycle Bin**:
+   - Click Recycle Bin icon on desktop
+   - ⚠️ **Important**: Recording captures "Select" but NOT the Enter key
+   - After recording: Manually add **Send Hotkey** activity below "Select item" step
+     - Search "Send Hotkey" in Activities panel
+     - Drag below the Select step
+     - Set Key = "Enter"
+3. **Click Manage Tab**: Click "Manage" tab in Recycle Bin window (auto-recorded)
+4. **Click Empty Recycle Bin**: Click the button (auto-recorded)
+5. **Confirm Deletion**: When dialog appears → Click "Yes" (auto-recorded)
+6. **Close Folder**: Click close (X) button
+   - If "Indicate Anchor" appears → Click adjacent element (e.g., Minimize button) to help locate
 
-### A. British Influence
-| Policy | Impact |
-|--------|--------|
-| **Macaulay's Minute (1835)** | English institutionalized; shift from traditional languages |
-| **Administrative Focus** | Training clerks, not holistic education |
-| **Missionary Schools** | Spread English education + literacy |
+**Step 3: Finish & Test**
+- Press **Esc** → Click **"Save & Exit"**
+- Press **F5** to run → Robot empties Recycle Bin automatically
 
-### B. Indian Reformers' Contributions
+#### Troubleshooting Tip:
+If Recycle Bin opens with single-click instead of double-click:
+1. Find "Click Recycle Bin" activity in sequence
+2. Select it → Go to Properties panel
+3. Change **ClickType** from "Single" to "Double"
 
-#### 1️⃣ Raja Ram Mohan Roy (1772-1833)
-```
-✅ Opposed exclusive Western classical education (Latin/Greek)
-✅ Advocated modern scientific education + Indian heritage
-✅ Established Hindu College, Calcutta (1817) → Presidency College model
-✅ Supported English for science access + Vernacular for primary education
-✅ Impact: Bridged traditional + modern; foundation for secular rational curriculum
-```
+✅ **Result**: Recycle Bin is emptied without manual intervention!
 
-#### 2️⃣ Swami Vivekananda (1863-1902)
-```
-✅ Education = "Man-making & character-building" (not info accumulation)
-✅ Criticized colonial system for creating "imitative/servile" mentality
-✅ Advocated: Indian spiritual values + Modern scientific knowledge
-✅ Emphasized: Experiential learning + Service + Inner strength
-✅ Established: Ramakrishna Mission (1897) → Schools, colleges, vocational centers
-✅ Championed: Mass education, women's education, technical training
-✅ Key Quote: "Education is the manifestation of perfection already in man."
-✅ Impact: Inspired nationalists; influenced post-independence value education policies
-```
 
-### C. Structural Developments
-- 🏫 Formal schooling: Primary → Secondary → Higher education
-- 🎓 Universities: Calcutta, Bombay, Madras (1857) – British model
-- 📋 Educational Commissions: Hunter (1882), Sadler (1917) → Structured frameworks
 
-### D. Curriculum Changes (Modern)
-```
-🔬 Science & Technology
-📐 Modern Mathematics
-🌍 History & Social Sciences
-📖 Western Literature & Philosophy
-🔧 Vocational & Technical Education
-```
 
-### E. Features of Modern Education
-- 🏢 Institutionalized + Standardized
-- 🧪 Emphasis: Rationalism, scientific temper, secular knowledge
-- 📝 Uniform syllabi + Examinations
-- 🌐 English = Upward mobility + Global engagement
+
+# UNIT – III: Sequence, Flowchart, and Control Flow
+## Exam Preparation Notes (Simple & Detailed)
 
 ---
 
-## IV. AIMS OF EDUCATION (Comparative Table)
+## 1. Sequencing the Workflow
 
-| Aim | Ancient India | Medieval India | Modern India |
-|-----|--------------|----------------|--------------|
-| **Primary Goal** | Moksha (Self-realization) | Religious instruction + Admin roles | Scientific temper + Democratic citizenship |
-| **Character** | Dharma, Satya, Ahimsa, discipline | Moral conduct per scripture | Equality, secularism, social justice |
-| **Development** | Holistic: Intellectual+Spiritual+Physical | Intellectual + Cultural synthesis | Personality: Creativity, leadership, critical thinking |
-| **Social Role** | Varna-Dharma duties | Court administration + Governance | Economic employability + National integration |
-| **Knowledge** | Preserve Vedic heritage via oral tradition | Translate texts across languages | Evidence-based learning + Technological advancement |
+### What is a Sequence?
+- A **Sequence** is a group of logical steps where each step represents an action or work
+- Used for processes that happen **one after another** in linear order
+- Among UiPath project types, Sequences are the **smallest and simplest**
 
-### Memory Flow: Ancient Aims
-```
-Moksha → Character → Holistic Growth → Social Duty → Knowledge Preservation
-```
+### UiPath Project Types:
+| Project Type | Best Used For |
+|-------------|--------------|
+| **Sequence** | Simple, linear automation tasks |
+| **Flowchart** | Complex processes with decisions |
+| **User Events** | Front office robots |
+| **State Machines** | Complex business processes |
 
----
-
-## V. SUBJECTS & LANGUAGES (Period-wise)
-
-### A. Ancient India
-#### Languages of Instruction
-| Language | Use |
-|----------|-----|
-| **Sanskrit** | Primary: Scriptures, Philosophy, Science, Literature |
-| **Prakrits/Pali** | Buddhist/Jain traditions; accessible to common people |
-| **Regional** | Communication; formal education largely Sanskrit-based |
-
-#### Why Sanskrit Was Crucial for Knowledge Preservation
-- 🔤 Precise, inflected language + Phonetic alphabet (Devanagari) → Exact oral transmission
-- 📜 Vedas, Upanishads, Epics, Puranas composed in Sanskrit
-- 🔬 Scientific texts: Charaka Saṃhitā (Medicine), Suśruta Saṃhitā (Surgery), Āryabhaṭīya (Math/Astro), Śulba Sūtras (Geometry)
-- 🧠 Pāṇini's Aṣṭādhyāyī (5th BCE) → Sophisticated grammar → Influenced modern linguistics (Chomsky)
-- 🔗 Link language for scholars across India → Enabled cross-regional debates
-
-#### Role of Prakrit & Pali
-- 🗣️ Vernacular languages → Democratized knowledge for women, merchants, lower groups
-- 📚 Pali = Theravada Buddhist canon (Tripitaka); Ardhamagadhi = Jain Āgamas
-- 🌾 Preserved folk literature, Jātakas, practical medicine
-- ✅ Dual preservation: Sanskrit (elite scholarship) + Prakrit (popular wisdom)
-
-#### Major Subjects (Ancient)
-```
-🕉️ Religious/Philosophical: Vedas, Upanishads, Vedāṅgas, Darśanas (6 systems)
-🗣️ Language/Literature: Vyākaraṇa (Grammar), Poetry, Drama, Linguistics
-🧠 Logic/Debate: Nyāya, Dialectics
-🔭 Science/Math: Arithmetic, Algebra, Geometry, Astronomy (Jyotiṣa)
-🌿 Medicine: Āyurveda, Surgery, Herbal science
-🏛️ Polity/Economics: Governance, Statecraft, Diplomacy
-🎨 Arts/Physical: Music, Dance, Painting, Martial arts, Archery
-```
-
-### B. Medieval India
-#### Languages
-| Language | Domain |
-|----------|--------|
-| **Arabic** | Religious/Theological education |
-| **Persian** | Administration, Court culture (Official language) |
-| **Sanskrit** | Traditional Hindu institutions |
-| **Regional** | Literary development (Hindi, Bengali, Tamil, etc.) |
-
-#### Subjects Taught
-```
-🕌 Religious: Quranic studies, Hadith, Fiqh (Islamic Jurisprudence)
-📚 Language/Lit: Arabic grammar, Persian poetry/prose, Translation
-🧠 Philosophy/Logic: Islamic philosophy, Greek philosophy (Arabic translations)
-🔭 Science/Math: Astronomy, Arithmetic, Geometry, Unani Medicine
-📜 History/Geography: Court chronicles, Political history
-🕉️ Pathshalas continued: Sanskrit grammar, Hindu philosophy, Astrology, Arts
-```
-
-### C. Modern India
-#### Languages
-| Language | Role |
-|----------|------|
-| **English** | Higher education, Science, Law, Administration (British institutionalized) |
-| **Regional** | Primary level instruction |
-| **Hindi** | Later gained importance as official language |
-
-#### Subjects (Modern Curriculum)
-```
-🔬 Sciences: Physics, Chemistry, Biology, Environmental Science
-📐 Mathematics: Algebra, Calculus, Statistics
-🌍 Social Sciences: History, Polity, Economics, Sociology
-📖 Humanities: Literature (Indian+Western), Philosophy, Psychology
-💼 Professional: Engineering, Medicine, Law, Commerce, Management, CS
-🔧 Vocational: Industrial training, IT/Digital literacy, Entrepreneurship
-```
+### How to Build a Simple Sequence (Step-by-Step):
+1. Open UiPath Studio → Click **Blank** → Give project a meaningful name
+2. Search for **"Sequence"** in Activities panel → Drag and drop into Designer
+3. Double-click the Sequence to add steps inside
+4. Add **Input Dialog** activity:
+   - Search "Input Dialog" in Activities panel
+   - Drag it inside the Sequence
+   - In Label property, write your question (e.g., "What is your name?")
+5. Add **Message Box** activity:
+   - Search "Message Box" → Drag inside Sequence
+   - This will display the user's answer
+6. Create a **String variable** (e.g., "userName"):
+   - Go to Variables panel
+   - Click Create Variable
+   - Name: userName, Type: String
+7. Connect Input Dialog to variable:
+   - Select Input Dialog → Go to Properties panel
+   - Find **Result** property → Click dotted icon → Select your variable name
+8. Connect variable to Message Box:
+   - Select Message Box → In Text property, type your variable name
+9. Set Sequence as Start:
+   - Right-click Sequence → Select "Set as Start node"
+10. Click **Run** or press **F5** to see result
 
 ---
 
-## VI. SCIENCE & SCIENTISTS (Period-wise)
+## 2. Activities
 
-### A. Ancient India Scientists
+### What is an Activity?
+- An **activity** is the smallest unit of action in UiPath
+- Each activity performs one specific action
+- When activities combine, they form a complete process/automation
 
-#### 1️⃣ Āryabhaṭa (476-550 CE)
-| Contribution | Detail |
-|-------------|--------|
-| **Work** | Āryabhaṭīya (written at age 23) |
-| **Astronomy** | Earth rotates on axis; Scientific explanation of eclipses |
-| **Math** | π ≈ 3.1416; Sine tables; Year length = 365.258 days |
-| **Impact** | Foundation for Indian mathematical astronomy; Influenced Islamic/European astronomy |
+### Using Activities:
+- All activities are in the **Activities panel** (left side of Designer)
+- Search for any activity using the search bar (e.g., search "browser" to see all browser-related activities)
+- Use activities by:
+  - **Drag and drop** method, OR
+  - **Double-click** method
 
-#### 2️⃣ Brahmagupta (598-668 CE)
-| Contribution | Detail |
-|-------------|--------|
-| **Work** | Brahmasphuṭasiddhānta |
-| **Math Breakthrough** | First to define rules for ZERO + Negative numbers |
-| **Algebra** | Quadratic equations; Arithmetic, Geometry formulas |
-| **Famous Formula** | Area of cyclic quadrilateral (Brahmagupta's Formula) |
-| **Impact** | Established algebraic structure with zero → Critical to modern mathematics |
+### Using Activities with Workflows:
+**Why use workflows?**
+- Big projects with hundreds of activities are hard to debug
+- Solution: Break project into smaller modules called **workflows**
+- Each workflow can be tested separately → easier to find bugs
+- Benefits: Better code quality, maintainability, reliability, readability
 
-#### 3️⃣ Suśruta (Surgery)
-| Contribution | Detail |
-|-------------|--------|
-| **Work** | Suśruta Saṃhitā |
-| **Procedures** | 300+ surgical procedures; 120+ instruments |
-| **Innovations** | Cataract surgery; Rhinoplasty (plastic surgery) |
-| **Method** | Anatomy via dissection; Fracture classification |
-| **Title** | "Father of Surgery" → Foundation for reconstructive surgery |
-
-#### 4️⃣ Charaka (Medicine)
-| Contribution | Detail |
-|-------------|--------|
-| **Work** | Charaka Saṃhitā |
-| **Focus** | Internal medicine, Pathology |
-| **Innovations** | Systematic disease classification; Preventive medicine; Balanced diet |
-| **Concepts** | Immunity; Metabolism (Agni theory) |
-| **Impact** | Basis of Āyurveda + Holistic healthcare |
-
-### B. Fundamental Scientific Concepts in Indian Knowledge Systems
-
-#### 1️⃣ Pañcamahābhūtas (Five Great Elements)
-```
-🌍 Pṛthvī (Earth) → Solid state → Structure, Stability, Smell
-💧 Jala/Apas (Water) → Liquid → Cohesion, Fluidity, Taste
-🔥 Agni/Tejas (Fire) → Energy → Transformation, Heat, Form/Color
-💨 Vāyu (Air) → Gas → Movement, Expansion, Touch
-🌌 Ākāśa (Ether/Space) → Substratum → Sound, Emptiness, Field of interaction
-```
-
-**Application in Āyurveda: Three Doṣas**
-| Doṣa | Elements | Function |
-|------|----------|----------|
-| **Vāta** | Ākāśa + Vāyu | Movement, circulation, nerve impulses |
-| **Pitta** | Agni + Jala | Transformation, digestion, metabolism |
-| **Kapha** | Pṛthvī + Jala | Cohesion, structure, lubrication |
-
-> ✅ Health = Doṣa balance; Disease = Elemental disturbance → Treatment restores equilibrium via diet, herbs, lifestyle
-
-#### 2️⃣ Yoga as Scientific Discipline of Consciousness
-**Definition**: Yoga (yuj = to unite) = Systematic practice integrating body, mind, spirit
-
-**Patañjali's Aṣṭāṅga Yoga (8 Limbs)**:
-```
-1️⃣ Yama (Ethical restraints): Ahimsa, Satya, Asteya, Brahmacarya, Aparigraha
-2️⃣ Niyama (Observances): Śauca, Santoṣa, Tapas, Svādhyāya, Īśvara-praṇidhāna
-3️⃣ Āsana (Postures): Physical stability for meditation
-4️⃣ Prāṇāyāma (Breath control): Regulate prāṇa (life force)
-5️⃣ Pratyāhāra (Sense withdrawal): Turn attention inward
-6️⃣ Dhāraṇā (Concentration): Fix mind on single point
-7️⃣ Dhyāna (Meditation): Uninterrupted flow of concentration
-8️⃣ Samādhi (Absorption): Superconscious state; subject-object merge
-```
-
-**Scientific Validation (Modern Research)**:
-- 🧠 Neuroplasticity: Meditation increases gray matter density (attention, memory, emotion regulation)
-- ❤️ Physiology: Prāṇāyāma regulates autonomic nervous system; reduces stress, BP; improves pulmonary function
-- 🧪 Biochemistry: Yoga reduces cortisol (stress hormone); increases GABA (calming neurotransmitter)
-- 🏥 Psychotherapy: Mindfulness-Based Stress Reduction (MBSR) = Evidence-based clinical intervention
-
-> ✅ Yoga = Empirical, experiential science → Direct observation of consciousness through systematic introspection
-
-**Global Impact**: UNESCO Intangible Cultural Heritage (2016); International Day of Yoga (June 21)
-
-### C. Medieval India Scientists
-
-#### 1️⃣ Bhāskara II (1114-1185)
-| Work | Contributions |
-|------|--------------|
-| **Līlāvatī** | Arithmetic |
-| **Bījagaṇita** | Algebra |
-| **Key Ideas** | Permutations, Combinations, Indeterminate equations, Early differential calculus concepts |
-| **Impact** | Advanced algebra + Pre-calculus ideas centuries before Newton/Leibniz |
-
-#### 2️⃣ Mādhava of Sangamagrāma (Kerala School)
-| Contribution | Detail |
-|-------------|--------|
-| **Innovation** | Infinite series expansions for sine, cosine, arctangent |
-| **π Calculation** | Accurate value using infinite series |
-| **Legacy** | Groundwork for calculus concepts before Europe |
-| **Impact** | Precursor to modern calculus; Influenced global mathematical thought |
-
-#### 3️⃣ Nīlakaṇṭha Somayājī
-| Contribution | Detail |
-|-------------|--------|
-| **Astronomy** | Improved planetary motion models; Refined astronomical constants |
-| **Innovation** | Modified geocentric model for better accuracy |
-| **Impact** | Enhanced precision in medieval Indian astronomy |
-
-### D. Modern India Scientists
-
-| Scientist | Field | Key Contribution | Impact |
-|-----------|-------|-----------------|--------|
-| **C.V. Raman** (1888-1970) | Physics | Raman Effect (1928): Light wavelength change on scattering | Nobel Prize 1930; Raman spectroscopy → Chemistry, Physics, Medicine, Material Science |
-| **S.N. Bose** (1894-1974) | Quantum Physics | Bose-Einstein Statistics; Collaboration with Einstein | Bose-Einstein Condensate (new matter state); "Bosons" named after him |
-| **Meghnad Saha** (1893-1956) | Astrophysics | Saha Ionization Equation: Temperature + Spectral classification of stars | Foundation of stellar astrophysics; Modernized Indian astrophysics |
-| **Homi J. Bhabha** (1909-1966) | Nuclear Physics | Father of India's Nuclear Program; Founded TIFR | Established atomic energy research infrastructure; Nuclear reactor development |
-| **Vikram Sarabhai** (1919-1971) | Space Science | Founder of Indian Space Program; Established ISRO | Made India major space-faring nation; Satellites for education/rural development |
-| **A.P.J. Abdul Kalam** (1931-2015) | Aerospace | "Missile Man"; Led Agni/Prithvi missiles; Pokhran-II role | Strengthened India's aerospace + defense technology; Later President of India |
+### How to Extract Activities as Workflow (Step-by-Step):
+1. Create your activities inside a Flowchart or Sequence
+2. Select the activities you want to group
+3. Right-click on Designer panel → Choose **"Extract as Workflow"**
+4. A window pops up → Give meaningful name → Click **Create**
+5. UiPath automatically creates an **"Invoke [WorkflowName]"** activity in main Designer
+6. Double-click the Invoke activity to see which workflow it calls
+7. When you Run, it executes the extracted workflow
 
 ---
 
-## VII. PRACTICE QUESTIONS – Quick Answers
+## 3. Control Flow, Various Types of Loops, and Decision Making
 
-### 1. Ancient vs Medieval Education Comparison
-| Aspect | Ancient (Gurukul) | Medieval (Madrasas/Pathshalas) |
-|--------|-----------------|-------------------------------|
-| **Aim** | Moksha + Character + Social duty | Religious instruction + Admin roles |
-| **Curriculum** | Vedas, Logic, Medicine, Arts, Martial | Quran, Fiqh, Persian lit, Math, Astronomy + Sanskrit texts |
-| **Method** | Personalized, oral, guru-śiṣya | Institutional, written, examination-based |
-| **Language** | Sanskrit dominant | Arabic/Persian + Sanskrit + Regional |
-| **Access** | Merit-based, often free | Patronage-dependent; dual systems coexisted |
+### What is Control Flow?
+- Control flow = the **order** in which actions are performed in automation
+- UiPath provides many activities for decision-making and looping
 
-### 2. Buddhist Universities' Contribution (Nalanda/Vikramashila)
-- 🎓 International centers → Students from China, Persia, SE Asia
-- 🔬 Secular sciences: Medicine, Logic, Astronomy taught alongside Buddhist philosophy
-- 📚 Libraries preserved manuscripts → Cross-cultural knowledge exchange
-- 🧠 Rigorous debate methods → Advanced Nyāya (logic) traditions
-- 🌍 Alumni (Xuanzang, Yijing) transmitted Indian knowledge to East Asia
-
-### 3. Āyurveda's Scientific Basis
-```
-Core Framework:
-🔹 Pañcamahābhūtas (5 elements) → Material properties model
-🔹 Three Doṣas (Vāta/Pitta/Kapha) → Elemental combinations governing physiology
-🔹 Seven Dhātus (tissues): Rasa→Rakta→Māṃsa→Meda→Asthi→Majjā→Śukra (sequential nourishment)
-🔹 Three Malas (wastes): Purīṣa, Mūtra, Sveda (proper elimination vital)
-
-Diagnostic Methods:
-👁️ Observation (tongue, eyes, skin) + 💓 Nāḍī parīkṣā (pulse) + ❓ Questioning
-
-Treatment Principle:
-⚖️ "Opposite qualities cure": Excess heat (Pitta) → Cooling herbs/foods
-🔄 Pañcakarma: Five purification procedures for detoxification
-
-Modern Validation:
-✅ Turmeric (anti-inflammatory), Aśvagandhā (adaptogen), Triphalā (digestive) → Clinically studied
-```
-
-### 4. Persian/Arabic Influence in Medieval Education
-- 🗣️ Administrative language (Persian) → Unified governance across diverse regions
-- 📚 Translation movement: Sanskrit → Arabic/Persian → Knowledge preservation + cross-pollination
-- 🎓 Madrasas introduced systematic examination + curriculum structure
-- 🌐 Multilingual scholars → Enriched literature, science, philosophy
-- ⚖️ Islamic Law (Sharia/Fiqh) → New frameworks for jurisprudence + ethics
-
-### 5. Educational Commissions Impact
-#### Hunter Commission (1882)
-```
-✅ Emphasized primary education via local boards/municipalities
-✅ Grants-in-aid to private/missionary schools
-✅ Vernacular medium for primary; English for higher
-✅ Vocational/technical education at school level
-✅ Secondary education control to local bodies + universities
-```
-
-#### Sadler Commission (1917)
-```
-✅ Abolished Intermediate (F.A.) from university control → Separate intermediate colleges
-✅ University education departments for teacher training
-✅ Women's education + separate women's colleges
-✅ Applied research + Post-graduate studies emphasis
-✅ Led to University of Dhaka (1921) + university reorganization
-```
-
-### 6. Women's Education Across Periods
-| Period | Status | Examples |
-|--------|--------|----------|
-| **Ancient** | Early Vedic: High access; Later: Restricted to upper castes | Gārgī, Maitreyī, Lopāmudrā (Vedic hymns, philosophical debates) |
-| **Medieval** | Aristocratic women educated; Common women limited | Raziā Sultāna (administration), Mughal princesses (Persian, poetry) |
-| **Modern** | Reform movements → Mass education | Jyotiba+Savitribai Phule (first girls' school, Pune 1848); Vidyāsāgara (widow remarriage + education); Post-independence: RTE 2009; Women's literacy: 8.6% (1951) → 70.3% (2021) |
-
-### 7. Dhvani Theory in Indian Poetics (Quick Add)
-```
-Propounded by: Ānandavardhana (9th CE), Dhvanyāloka
-Core Idea: Highest poetry = Suggested meaning (vyaṅgya) > Literal meaning (vācya)
-
-Three Types:
-🔹 Vastu dhvani: Suggestion of fact
-🔹 Alaṅkāra dhvani: Suggestion of figure of speech  
-🔹 Rasa dhvani: Suggestion of emotional flavour (HIGHEST)
-
-Impact: Shifted focus from ornamentation → Evocative power; Revolutionized Indian literary criticism
-```
-
-### 8. Preserving Intangible Heritage
-**Examples**:
-- 💃 Bharatanāṭyam: Mudras + Bhakti + Philosophy encoded in movement
-- 🎭 Chhau dance: Masks + Martial + Epics (UNESCO recognized)
-- 🎨 Sohraī painting (Jharkhand): Tribal agricultural rituals
-
-**Threats**: Loss of patrons, commercialization, weakening oral transmission
-
-**Preservation Measures**:
-```
-📹 Documentation: Video archiving, digital databases
-🏛️ Govt schemes: Sangeet Natak Akademi awards, Guru-Śiṣya Paramparā Yojana
-📚 Curriculum: Integrate folk arts into school education
-🏘️ Community: Living heritage museums + cultural tourism
-⚖️ Legal: UNESCO 2003 Convention protection
-```
+### Types of Control Flow Activities:
+| Activity | Purpose |
+|----------|---------|
+| **Assign** | Give a value to a variable |
+| **Delay** | Pause automation for specified time |
+| **Break** | Stop a loop at a particular point |
+| **While** | Repeat while condition is true |
+| **Do While** | Execute once, then repeat while condition is true |
+| **For Each** | Go through each item in a collection |
+| **If** | Make decision: true or false |
+| **Switch** | Choose from multiple options |
 
 ---
 
-## 🧠 MEMORY TIPS & MNEMONICS
-
-### Ancient Education Flow
-```
-Gurukul → Ashrama (4 stages) → Universities (Takshashila/Nalanda) → Holistic Curriculum
-```
-
-### Scientists Timeline Mnemonic
-```
-Ancient: "A-B-S-C" → Āryabhaṭa, Brahmagupta, Suśruta, Charaka
-Medieval: "B-M-N" → Bhāskara II, Mādhava, Nīlakaṇṭha
-Modern: "R-B-S-B-S-K" → Raman, Bose, Saha, Bhabha, Sarabhai, Kalam
-```
-
-### Pañcamahābhūtas Order (Earth to Space)
-**Mnemonic**: "Please Just Ask Very Smart" → Pṛthvī, Jala, Agni, Vāyu, Ākāśa
-
-### Aṣṭāṅga Yoga 8 Limbs
-**Mnemonic**: "Young Nurses Always Practice Perfect Daily Care" → Yama, Niyama, Āsana, Prāṇāyāma, Pratyāhāra, Dhāraṇā, Dhyāna, Samādhi
-
-### Doṣas Elements
-```
-Vāta = Air+Space (movement)
-Pitta = Fire+Water (transformation)  
-Kapha = Earth+Water (structure)
-Mnemonic: "Very Pretty Kittens" → Vāta, Pitta, Kapha
-```
-
-### Education Aims Period Summary
-```
-Ancient: M-C-H-S-K → Moksha, Character, Holistic, Social duty, Knowledge preservation
-Medieval: R-A-I-C → Religious, Admin roles, Intellectual, Cultural integration
-Modern: S-D-E-N-P → Scientific temper, Democratic citizenship, Economic development, National integration, Personality growth
-```
-
----
-# 📚 ITK Unit 3: Condensed Notes for Quick Revision
-## *Indian Languages, Literature & Knowledge Systems*
+### The Assign Activity
+- Used to **assign a value to a variable**
+- Examples of use:
+  - Increment variable value in a loop
+  - Store result of calculation (sum, difference, etc.)
+- Properties:
+  - **To**: Variable name that will receive the value
+  - **Value**: The value or expression to assign
 
 ---
 
-## I. LINGUISTIC WEALTH OF INDIA (Overview)
+### The Delay Activity
+- Used to **pause/slow down** automation for a defined time
+- Format: `hh:mm:ss` (hours:minutes:seconds)
+- Useful when waiting for an application to open or load
 
-```
-🇮🇳 India = One of world's richest linguistic landscapes
-• Hundreds of languages + Thousands of dialects
-• Diversity reflects: Migration + Cultural exchange + Historical continuity
-• Language families preserve: Identity + Knowledge + Creativity
-```
-
----
-
-## II. MAJOR LANGUAGE FAMILIES OF INDIA
-
-### A. Indo-Aryan Languages (~78% speakers)
-| Feature | Details |
-|---------|---------|
-| **Region** | North, Central, Western India |
-| **Major Languages** | Hindi, Bengali, Marathi, Gujarati, Punjabi, Odia, Assamese, Urdu |
-| **Historical Stages** | Sanskrit → Prakrits → Apabhramsha → Modern |
-| **Scripts** | Hindi: Devanagari; Urdu: Perso-Arabic |
-| **Literary Contribution** | Epics (Ramayana/Mahabharata), Bhakti poetry (Kabir), Modern literature |
-
-### B. Dravidian Languages (~20% speakers)
-| Feature | Details |
-|---------|---------|
-| **Region** | South India |
-| **Major Languages** | Tamil, Telugu, Kannada, Malayalam |
-| **Key Fact** | Tamil = Oldest living classical language (2000+ years literature) |
-| **Literary Heritage** | Sangam literature, Bhakti poetry (Andal), Courtly traditions (Nannaya-Telugu Mahabharata) |
-
-### C. Austroasiatic Languages (Tribal)
-| Feature | Details |
-|---------|---------|
-| **Region** | Eastern & Central India (tribal communities) |
-| **Examples** | Santhali, Mundari, Ho |
-| **Nature** | Strong oral heritage: folk songs, myths, nature-connected narratives |
-| **Preservation** | Modern script development + Education integration needed |
-
-### D. Tibeto-Burman Languages (North-East)
-| Feature | Details |
-|---------|---------|
-| **Region** | Himalayan belt + North-East India |
-| **Examples** | Manipuri (Meitei), Bodo, Mizo, Naga languages, Lepcha |
-| **Tradition** | Largely oral: folklore, legends, ritual chants |
-| **Development** | Growing print culture + modern literature strengthening regional identity |
-
-### 🧠 Memory Tip: Language Families Order
-**"I-D-A-T"** → **I**ndo-Aryan → **D**ravidian → **A**ustroasiatic → **T**ibeto-Burman
+#### Example: Delay Between Two Messages (Step-by-Step):
+1. Create new Flowchart
+2. Add **Write Line** activity → Connect to Start node
+3. In Write Line Text property, type: `"Hey, what is your name?"`
+4. Add **Delay** activity → Connect to Write Line
+5. Select Delay → In Properties panel, set Duration: `00:00:50` (50 seconds)
+6. Add another **Write Line** → Connect to Delay
+7. In second Write Line Text, type: `"My name is Andrew Ng"`
+8. Click **Run** → Output panel shows first message, waits 50 seconds, then shows second message
 
 ---
 
-## III. INDIA'S LITERARY HERITAGE (Historical Flow)
+### The Break Activity
+- Used to **stop/exit a loop** at a particular point
+- **Only works inside For Each activity**
+- Useful when you want to stop looping after finding what you need
 
-### A. Classical Period
-```
-📜 Key Text: Abhijñānaśākuntalam (Kālidāsa)
-• Refined aesthetics + Universal themes (love, duty, dharma)
-• Foundation for Indian literary criticism (Rasa theory)
-```
-
-### B. Medieval Period (Bhakti & Sufi Movements)
-| Movement | Key Features | Poets/Examples |
-|----------|-------------|----------------|
-| **Bhakti** | Vernacular languages, equality, devotion over ritual | Kabir, Mirabai, Tulsidas |
-| **Sufi** | Love, unity, spiritual experience | Amir Khusrau, Bulleh Shah |
-| **Impact** | Democratized literature + Strengthened regional languages | |
-
-### C. Modern Period (19th-20th Century)
-```
-🎯 Themes: Social reform + Nationalism + Contemporary realities
-• Rabindranath Tagore: Global recognition through poetry/novels/songs
-• Regional literatures: Engaged with caste, gender, freedom, identity
-• Example: Premchand (Hindi), Subramania Bharati (Tamil), Sarat Chandra (Bengali)
-```
+#### Example: Break After First Iteration (Step-by-Step):
+1. Add **Sequence** to Designer panel
+2. Add **For Each** activity inside Sequence
+3. Create two variables:
+   - `item` (type: generic, auto-created by For Each)
+   - `x` (type: Array of Int32)
+4. Set default value for `x`: `{1, 2, 3, 4, 5}`
+5. Inside For Each body, add **Break** activity
+6. Also inside For Each, add **Write Line** activity
+7. In Write Line Text, type: `item.ToString`
+8. Click **Run** → Only first element displays because Break stops loop after first iteration
 
 ---
 
-## IV. LITERATURE AS CARRIER OF TRADITIONAL KNOWLEDGE
-
-### A. Core Principle
-```
-Indian literature ≠ Information storage
-Indian literature = Knowledge encoded in:
-📖 Narratives + Poetry + Genealogies + Dialogues
-→ Memorable + Transmittable (even without writing)
-```
-
-### B. Vedas as Knowledge Repositories (1500-500 BCE)
-| Veda | Knowledge Preserved |
-|------|-------------------|
-| **Rig Veda** | Cosmology (Nāsadīya Sūkta: origin of universe), Hymns |
-| **Yajur Veda** | Ritual procedures + Applied knowledge |
-| **Sama Veda** | Music + Chanting science (musical notation) |
-| **Atharva Veda** | Medicine, herbal remedies, healing practices (precursor to Ayurveda) |
-| **Vedāṅga Jyotiṣa** | Astronomy: solstices, equinoxes, lunar calendars |
-| **Ethics** | Ṛta (cosmic order) + Dharma (duty) encoded in verses |
-
-**Transmission Mechanism**: Precise oral recitation (Śākhās) + phonetic markers → Verbatim preservation for millennia
-
-### C. Puranas as Encyclopedic Compilations (300-1200 CE)
-```
-📚 Scope of Knowledge:
-🌍 Cosmology/Geography: Universe maps, Jambudvīpa, Meru, Gaṅgā
-👑 Genealogies (Vaṃśa): Kings, sages, gods → Historical memory
-⛩️ Pilgrimage (Tīrtha): Sacred sites + rituals → Religious tourism
-⚙️ Science/Tech: Agni Purāṇa (weapons, warfare), Garuḍa Purāṇa (anatomy), Bṛhat Saṃhitā (architecture, gemology)
-🌿 Ecology: Forest conservation, tree planting, animal protection
-
-💡 Democratizing Function:
-Vedic concepts → Stories/Allegories → Accessible to ALL social groups
-→ Horizontal transmission (across society) + Vertical transmission (across time)
-```
-
-### D. Literature as Living Tradition
-```
-🔄 Dynamic Preservation:
-• Oral performances (Purāṇa recitation, Kathā storytelling) → Keep knowledge alive
-• Commentaries (Bhāṣyas) → Continuous reinterpretation + updating
-• Modern adaptation: Novels, comics, documentaries → Adaptive resilience
-```
+### What are Loops?
+- Loops repeat a part of workflow for different cases or when criteria are met
+- **Important**: Always include an **exit point**, otherwise loop runs infinitely!
+- Loop types in UiPath: While, Do While, For Each
 
 ---
 
-## V. ROLE OF SCRIPTURES IN CURRENT SOCIETY
+### The While Activity
+- Executes statements **while a condition is true**
+- Checks condition **first**, then executes if true
+- Exits loop when condition becomes false
+- Useful for iterating through arrays
 
-| Role | Examples & Impact |
-|------|------------------|
-| **🧭 Ethical Guidance** | Ahimsā (animal rights), Satya/Dharma (legal judgments), Niṣkāma Karma (management courses) |
-| **🧘 Personal Growth** | Daily mantras, meditation frameworks, Yoga/mindfulness programs globally |
-| **🎓 Education/Research** | IITs/IIMs: Vedic math, Sanskrit grammar; Pāṇini's grammar → Computational linguistics |
-| **⚖️ Social/Legal Reform** | Arya Samaj/Brahmo Samaj used scriptures to challenge caste/sati; Environmental protection (Bishnoi community) |
-| **🌍 Cultural Identity** | Diaspora: Weekend schools, festivals; UNESCO: Vedic chanting as Intangible Heritage |
-| **💼 Economic Livelihood** | Priests, Ayurvedic doctors, Yoga instructors, manuscript restorers; Pilgrimage tourism |
-| **⚠️ Critical View** | Some passages contested (caste/gender); Modern approach: Critical hermeneutics → Core ethics vs. historical context |
-
----
-
-## VI. ROLE OF SANSKRIT IN INDIAN KNOWLEDGE SYSTEMS
-
-### A. Foundational Position
-```
-🔹 Pan-Indian scholarly language for 2000+ years
-🔹 Not everyday language → But unifying medium across regions/disciplines
-🔹 Cornerstone of India's civilizational heritage
-```
-
-### B. Significance in Knowledge Systems
-| Domain | Sanskrit Texts/Contributions |
-|--------|-----------------------------|
-| **Philosophy** | Darśanas, Vedānta metaphysics |
-| **Grammar** | Pāṇini's Aṣṭādhyāyī (5th BCE) → Precision in phonetics, morphology, syntax |
-| **Logic** | Nyāya syllogistic reasoning |
-| **Medicine** | Charaka Saṃhitā, Suśruta Saṃhitā (diagnosis, surgery, ethics) |
-| **Astronomy/Math** | Āryabhaṭīya (trigonometry, planetary motion, Earth's rotation) |
-| **Polity** | Arthaśāstra (governance, economics, diplomacy) |
-| **Arts** | Nāṭya Śāstra (drama, dance, music principles) |
-
-### C. Pan-Indian Influence
-```
-🌐 Intellectual Bridge:
-• Enabled scholars (Kashmir→Bengal→Deccan→Tamil) to debate + exchange texts
-• Circulated ideas, teachers, manuscripts across vast distances
-
-🗣️ Influence on Regional Languages:
-• Vocabulary borrowing + Literary forms + Aesthetic conventions
-• Regional poets adapted Sanskrit epics → Democratized knowledge
-• Two-way dynamic: Sanskrit influenced regions ↔ Regions revitalized Sanskrit
-
-🏛️ Centers of Learning:
-• Nālandā, Takṣaśilā: Sanskrit medium → Attracted students from across Asia
-• Hindu/Buddhist traditions → Knowledge exchange with SE/East Asia
-```
-
-### D. Key Sanskrit Literature & Value
-| Text | Type | Scientific/Literary Value |
-|------|------|-------------------------|
-| **Rāmāyaṇa/Mahābhārata** | Epics | Cultural encyclopedias: Dharma, politics, ethics, human dilemmas |
-| **Abhijñānaśākuntalam** | Drama | Lyrical elegance + Nature imagery + Ethical themes |
-| **Nāṭya Śāstra** | Treatise | Foundation of classical performance; Rasa, Alaṅkāra, Dhvani theories |
-| **Arthaśāstra** | Polity | Systematic governance, economics, law → Pragmatic rational analysis |
-
-### E. Contemporary Relevance
-```
-✅ Fields influenced today: Education, Philosophy, Yoga, Ayurveda, Linguistics, Cultural studies
-✅ Revitalization: Curriculum integration, Manuscript preservation, Digital archives
-✅ Key insight: Engaging Sanskrit ≠ "returning to past" → Drawing from deep reservoir of ideas for contemporary enrichment
-```
+#### Example: Count from 5 to 50 by 5s (Step-by-Step):
+1. Create Blank project → Add **Sequence**
+2. Create integer variable `y`, set default value: `5`
+3. Add **While** activity to Sequence
+4. In While Condition field, set: `y <= 50`
+5. Inside While body, add **Assign** activity:
+   - To: `y`
+   - Value: `y + 5`
+6. Add **Write Line** inside While body
+7. In Write Line Text, type: `y.ToString`
+8. Click **Run** → Output shows: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
 
 ---
 
-## VII. PALEOGRAPHY IN INDIAN KNOWLEDGE SYSTEMS
+### The Do While Activity
+- **Difference from While**: Executes statement **first**, then checks condition
+- Guarantees at least one execution even if condition is false initially
+- Exits loop when condition becomes false
 
-### A. Definition & Scope
-```
-🔬 Paleography = Scientific study of ancient writing systems, scripts, manuscripts, inscriptions + decipherment
-
-Indian Focus:
-• Scripts: Brāhmī, Kharoṣṭhī, Gupta, Śāradā, Nāgarī (Devanāgarī), Grantha + regional derivatives
-• Materials: Birch bark, palm leaf, paper, copper plates
-• Techniques: Ink preparation, scribal traditions
-```
-
-### B. Historical Significance
-```
-📅 Dating/Authenticating: Ancient texts (Vedas, Epics, Buddhist/Jain canon, scientific treatises)
-🔍 Reconstructing: Lost texts + correcting scribal errors via manuscript comparison
-🗝️ Foundation: James Prinsep (1837) deciphered Aśokan edicts using Brāhmī script
-```
-
-### C. Major Scripts Evolution
-| Script | Period/Region | Key Features | Legacy |
-|--------|--------------|-------------|--------|
-| **Brāhmī** | 3rd BCE (Aśoka); Pan-India | Left→right; Geometric shapes; Systematic vowel marking | Ancestor of most modern Indian scripts |
-| **Kharoṣṭhī** | 4th BCE-3rd CE; Gandhara | Right→left; Derived from Aramaic | Preserved Gandhāran Buddhist manuscripts |
-| **Gupta** | 4th-6th CE; North India | Cursive; Regional variants | Gave rise to Śāradā (Kashmir) + Siddhamātṛkā → Devanāgarī |
-| **Devanāgarī** | 7th-8th CE onwards | Top horizontal line (śirorekhā) | Sanskrit, Hindi, Marathi, etc. |
-| **Grantha** | 6th CE; South India | Developed for Sanskrit | Influenced Tamil + Malayalam scripts |
-| **Tibetan** | 7th CE; Tibet | Adapted from Gupta | Translating Buddhist texts |
-
-### D. Writing Materials & Methods
-| Material | Region/Use | Characteristics |
-|----------|-----------|----------------|
-| **Palm leaf (tāḍapatra)** | South/Southeast Asia | Dried, smoothed, inscribed with stylus; carbon powder rubbed in |
-| **Birch bark (bhūrja patra)** | Kashmir, Nepal, North India | Fragile but allowed longer texts |
-| **Copper plates (tāmraśāsana)** | Royal grants, legal docs | Durable, moisture-resistant; e.g., Coorg plates, Thanjavur temple plates |
-| **Paper** | 12th-13th CE onwards (Islamic influence) | Persian, Urdu, later Sanskrit manuscripts |
-| **Ink** | Pan-India | Lampblack+gum; Iron-gall; Red (cinnabar/lac) for emphasis |
-
-### E. Paleography + Knowledge Preservation
-```
-🔑 Critical Functions:
-• Script ID → Read commentaries (Bhāṣyas) = only surviving sources of lost texts
-• Paleographic dating → Establish chronology of scientific works
-• Manuscript cataloguing → National Mission for Manuscripts: 5M+ manuscripts catalogued
-
-🔗 Connection to Other IKS Disciplines:
-• Linguistics: Physical evidence for phonetic/grammatical evolution
-• Lexicography: Reconstruct original readings of ancient lexicons
-• NLP: OCR models for historical scripts → Computational linguistics input
-• History of Science: Date earliest manuscripts of Āryabhaṭa/Suśruta → Track influence spread
-```
-
-### F. Key Indian Paleographers
-```
-• A.C. Burnell (19th CE): Studied South Indian scripts; Classified Grantha
-• Georg Bühler: Identified Brāhmī origins + traced spread
-• D.C. Sircar: Analyzed chronology of inscriptions + copper plates
-• Sheldon Pollock: Linked script history to "Sanskrit cosmopolis" + vernacularization
-```
+#### Example: Generate Multiples of 2 Less Than 20 (Step-by-Step):
+1. Add **Sequence** to Designer
+2. Add **Do While** activity
+3. Inside Do While body, add **Assign** activity:
+   - Create integer variable `z`, default value: `2`
+   - In Assign: To = `z`, Value = `z + 2`
+4. Add **Write Line** inside body → Text: `z.ToString`
+5. In Do While Condition field, set: `z < 20`
+6. Click **Run** → Output: 4, 6, 8, 10, 12, 14, 16, 18
 
 ---
 
-## VIII. VEDIC MATHEMATICS: Concepts, Techniques & Significance
+### The For Each Activity
+- Iterates through **each element** in a collection/list, one at a time
+- Executes all actions inside its body for each element
+- Perfect for processing arrays or lists
 
-### A. Introduction & Historical Context
+#### Example: Display Even Numbers from Array (Step-by-Step):
+1. Start Blank project → Add **Sequence**
+2. Add **For Each** activity inside Sequence
+3. Create variable `y` (type: Array of Int32)
+4. Set default value: `{2, 4, 6, 8, 10, 12, 14, 16, 18, 20}`
+5. Inside For Each body, add **Write Line** activity
+6. In Write Line Text, type: `item.ToString` (item is auto-generated variable)
+7. Click **Run** → Each number displays one by one
+
+---
+
+### Decision Making Activities
+
+#### The If Activity
+- Has **two conditions**: True or False
+- If statement is true → executes Then block
+- If statement is false → executes Else block
+
+#### Example: Check if Sum of Two Numbers < 6 (Step-by-Step):
+1. Add **Flowchart** from Activities panel
+2. Add two **Input Dialog** activities
+3. Create two integer variables: `x` and `y`
+4. In each Input Dialog Properties:
+   - Set Label/Title as needed
+   - In Result property, assign respective variable (x or y)
+5. Add **If** activity to Flowchart
+6. In If Condition field, type: `x + y < 6`
+7. Inside If's Then block: Add Write Line with Text: `"True"`
+8. Inside If's Else block: Add Write Line with Text: `"False"`
+9. Click **Run** → If sum < 6, shows "True"; otherwise shows "False"
+
+---
+
+#### The Switch Activity
+- Used to **choose from multiple options**
+- By default takes integer argument, but can change TypeArgument in Properties
+- Very useful for categorizing data
+
+#### Example: Check if Number is Odd or Even (Step-by-Step):
+1. Add **Sequence** activity
+2. Add **Input Dialog** inside Sequence
+3. Create integer variable `k`
+4. In Input Dialog Result property, assign variable `k`
+5. Add **Switch** activity below Input Dialog
+6. In Switch Expression field, type: `k Mod 2` (checks remainder when divided by 2)
+7. In Switch **Default** case:
+   - Add Write Line
+   - Text: `k.ToString + " is an even number"`
+8. Create **Case 1** (for remainder = 1, meaning odd):
+   - Add Write Line
+   - Text: `k.ToString + " is an odd number"`
+9. Click **Run** → Shows whether entered number is odd or even
+
+---
+
+## 4. Step-by-Step Examples Using Sequence and Flowchart
+
+### When to Use Sequence vs Flowchart?
+| Feature | Sequence | Flowchart |
+|---------|----------|-----------|
+| Best for | Linear, step-by-step tasks | Complex processes with decisions |
+| Structure | Activities execute in order | Activities can branch, loop, reverse |
+| Reusability | Can be nested in Flowcharts | Can contain Sequences, reusable across projects |
+| Decision making | Limited | Multiple branching options (true/false branches) |
+
+---
+
+### How to Use a Sequence (Simple Example)
+**Goal**: Ask user name → Display it back
+
+#### Steps:
+1. Drag **Flowchart** onto Designer panel
+2. Drag **Sequence** inside Flowchart → Connect to Start node
+3. Double-click Sequence to enter it
+4. Add **Input Dialog** activity:
+   - In Label property, write: "What is your name?"
+5. Add **Message Box** activity
+6. Create String variable (e.g., `userName`)
+7. In Input Dialog Result property → Select `userName` variable
+8. In Message Box Text property → Type `userName`
+9. Press **F5** to Run → Dialog asks name → Message box displays entered name
+
+**Key Point**: Sequence executes activities in the order you place them. You can add as many activities as needed.
+
+---
+
+### How to Use a Flowchart with Sequences (Email Example)
+**Goal**: Understand grouping Sequences inside Flowcharts (conceptual, not full email code)
+
+#### Steps:
+1. On main Flowchart, drag two **Flowchart** activities
+2. Rename them: `SendMail` and `Message`
+3. For each Flowchart:
+   - Double-click to enter
+   - Drag **Sequence** inside
+   - Right-click Sequence → "Set as Start node"
+4. Inside **Message Flowchart's Sequence**:
+   - Add four **Input Dialog** activities for: name, message, sender, receiver
+   - (No need to set properties for this lesson)
+5. Inside **SendMail Flowchart's Sequence**:
+   - This is where email activities would go (covered in later chapter)
+6. Return to main Flowchart:
+   - Connect Message Flowchart to Start node
+   - Connect SendMail Flowchart to Message Flowchart
+7. Click **Run** to visualize flow
+
+**Key Point**: Group related activities in Sequences → Group related Sequences in Flowcharts → Each represents a task → Easy to test separately.
+
+> 📝 **Note**: To use email activities, install UiPath.Mail.Activities package via Manage Packages (Ctrl+P) → Search "mail"
+
+---
+
+## 5. Step-by-Step Examples Using Sequence and Control Flow
+
+### Example: Count Names Starting with Letter 'A'
+**Goal**: Given array of names, count how many start with 'A' and display result
+
+#### Steps:
+1. Drag **Flowchart** from Activities panel
+2. Drag **Sequence** inside Flowchart → Right-click → "Set as Start node"
+3. Double-click Sequence:
+   - Create variable `names` (type: Array of String)
+   - In Default section, initialize: `{"John", "Sam", "Andrew", "Anita"}`
+   - Create integer variable `Count` (type: Int32, default: 0) to store result
+4. Add **For Each** activity inside Sequence:
+   - In Expression field, type: `names` (the array to iterate)
+5. Inside For Each body, add **If** activity:
+   - In Condition field, type: `item.ToString.StartsWith("A")`
+   - This checks if current name starts with "A"
+6. Inside If's **Then** block:
+   - Add **Assign** activity
+   - To: `Count`
+   - Value: `Count + 1` (increment counter)
+7. After For Each loop, add **Message Box** activity:
+   - In Text property, type: `Count.ToString`
+   - (Convert Int32 to String using .ToString method)
+8. Click **Run** or press **F5** → Result: `2` (Andrew and Anita start with A)
+
+---
+
+## 6. Data Manipulation (Introduction)
+
+### What is Data Manipulation?
+- Process of **changing data**: adding, removing, or updating it
+- Before manipulating data, understand:
+  - Variables and their scope
+  - Collections (arrays, lists)
+  - Arguments (for passing data between workflows)
+  - Data tables (tabular data structure)
+
+### Why Learn Data Manipulation?
+- Store and retrieve data efficiently
+- Work with files (CSV, Excel)
+- Scrape data from web
+- Build dynamic automations
+
+---
+
+## 7. Variables and Scope
+
+### What is Memory?
+- Memory has millions of **cells**, each storing data as 0s and 1s
+- Each cell has a **unique address** for access
+- Data is split into smaller binary forms when stored
+
+### What is a Variable?
+- A **name given to a block of memory** to hold data
+- You can declare any meaningful name for a variable
+- **Best practice**: Use descriptive names (e.g., `userName`, `flightNumber`) not ambiguous ones (e.g., `temp`, `data`)
+
+### Variable Data Types in UiPath:
+| Type | Content it Holds | Example |
+|------|-----------------|---------|
+| **Integer** | Whole numbers | 5, 100, -3 |
+| **String** | Text of any kind | "Hello", "User123" |
+| **Boolean** | True or False | True, False |
+| **Generic** | Anything | Any data type |
+
+### How to Declare a Variable:
+1. Go to **Variables panel** (bottom-left in Designer)
+2. Click **Create Variable**
+3. Fill:
+   - Name: Meaningful name (e.g., `userName`)
+   - Type: Select from dropdown (String, Int32, etc.)
+   - Default: Optional initial value
+   - Scope: Where variable is accessible (see below)
+
+### What is Scope?
+- **Scope** = region where variable is available/effective
+- Choose scope based on need; **limit it as much as possible**
+- Security tip: Don't set scope to fullest unnecessarily (risk of accidental access/modification)
+
+#### Example: Using Variable in Message Box (Step-by-Step):
+1. In Variables panel, create variable:
+   - Name: `name`, Type: String, Default: `"Hello World"`
+2. Search **"Message Box"** in Activities panel → Drag to Flowchart
+3. Right-click Message Box → "Set as Start node"
+4. Double-click Message Box → In Text property, type variable name: `name`
+5. Click **Run** → Dialog pops up showing "Hello World"
+
+---
+
+## 8. Collections
+
+### Types of Variables:
+| Category | Description | Examples |
+|----------|-------------|----------|
+| **Scalar** | Holds single data point | Integer, String, Boolean |
+| **Collections** | Holds one or more data points of same type | Array, List, Dictionary |
+| **Tables** | Tabular structure with rows and columns | Data Table |
+
+### What is a Collection?
+- Can store **multiple values**, but all must be **same data type**
+- **Array**: Fixed-size collection (cannot add/remove after creation)
+- **Exception**: Array of Objects can store different data types
+
+### Using Arrays (Step-by-Step Example):
+**Goal**: Initialize integer array → Display each element
+
+1. Drag **Flowchart** → Add **Sequence** inside → Set as Start node
+2. Create variable `arr` (type: Array of Int32)
+3. In Default section, initialize: `{1, 2, 3, 4, 5}`
+4. Add **For Each** activity inside Sequence
+5. In For Each Expression field, type: `arr`
+6. Inside For Each body, add **Message Box**
+7. In Message Box Text, type: `item.ToString`
+   - (Convert item to String because Message Box expects String)
+8. Click **Run** → Each value pops up one by one
+
+---
+
+## 9. Arguments (Purpose and Use)
+
+### What is an Argument?
+- Similar to variable but with **larger scope**
+- Used to **pass values between different workflows**
+- Created in **Arguments panel** of Designer
+
+### Why Use Arguments?
+- Break big projects into smaller, testable workflows
+- Workflows need to exchange data → Arguments enable this communication
+
+### Argument Directions:
+| Direction | Purpose |
+|-----------|---------|
+| **In** | Receive value from another workflow |
+| **Out** | Send value to another workflow |
+| **In/Out** | Both send and receive |
+| **Property** | Not currently used |
+
+### How to Create an Argument:
+1. Open **Arguments panel** (next to Variables panel)
+2. Click **Create Argument**
+3. Fill:
+   - Name: Meaningful name
+   - Direction: In/Out/In/Out
+   - Type: Data type (String, Int32, etc.)
+   - Default: Optional initial value
+
+---
+
+## 10. Data Table Usage with Examples
+
+### What is a Data Table?
+- **Tabular data structure** with rows and columns
+- Example structure:
 ```
-📚 Vedic Mathematics = Collection of mathematical sūtras (aphorisms) from ancient Indian texts
-• Sources: Atharvaveda + Vedāṅgas (Jyotiṣa-astronomy, Śulba Sūtras-geometry)
-• Popularized by: Swami Bharati Krishna Tirtha (1884-1960); Book: "Vedic Mathematics" (1965)
-• Scholarly note: 16 sūtras not directly in extant Vedas → Modern codification of ancient computational methods
-• Value: Efficient mental calculation techniques complementing standard arithmetic/algebra
+| Student Name | Roll Number | Class |
+|--------------|-------------|-------|
+| Andrew Jose  | 1           | 3     |
+| Jorge Martinez| 2          | 3     |
+| Stephen Cripps| 3          | 2     |
 ```
 
-### B. The Sixteen Sūtras (Core Aphorisms) – Quick Reference
+### Uses of Data Table:
+- Build tables dynamically
+- Store tabular data in memory
+- **Data scraping**: Extract web data into tabular format
+- Read/write Excel/CSV files
 
-| Sūtra | Meaning | Application Example |
-|-------|---------|-------------------|
-| **1. Ekādhikena Pūrveṇa** | By one more than previous one | Squaring numbers ending in 5: 25² = 625 (2×3=6, append 25) |
-| **2. Nikhilam Navataścaramam Daśataḥ** | All from 9, last from 10 | Subtraction/multiplication near powers of 10: 999-284=715 |
-| **3. Ūrdhva-Tiryagbhyām** | Vertically and crosswise | General multiplication: 32×21 = 672 (step-by-step cross pattern) |
-| **4. Parāvartya Yojayet** | Transpose and apply | Solving equations, division |
-| **5. Śūnyaṁ Sāmyasamuccaye** | When sum is same, that sum is zero | Equations with equal coefficient sums |
-| **6. (Ānurūpye) Śūnyamanyat** | If one in ratio, other is zero | Linear equations with proportional terms |
-| **7. Saṅkalana-vyavakalanābhyām** | By addition and subtraction | Simultaneous linear equations |
-| **8. Pūrāpūrābhyām** | By completion/non-completion | Simplifying fractions, series |
-| **9. Calana-Kalanābhyām** | Differences and similarities | Quadratic equations |
-| **10. Yāvadūnam** | By the deficiency | Squaring numbers near base |
-| **11. Vyasti-samastiḥ** | Part and whole | Combining partial results |
-| **12. Śeṣāṇyena Caramena** | Remainder by last digit | Divisibility, recurring decimals |
-| **13. Sopāntyadvayamantyam** | Ultimate + twice penultimate | Linear equations in two variables |
-| **14. Ekanyūnena Pūrveṇa** | By one less than previous | Multiplication by 9, 99, 999 |
-| **15. Guṇitasamuccayaḥ** | Product of sum = sum of product | Verifying algebraic factorization |
-| **16. Guṇakasamuccayaḥ** | Factor of sum = sum of factor | Supplementary to above |
+---
 
-### C. Example: Nikhilam Multiplication (96 × 94)
-```
-Base = 100
-96 → deficiency: -4
-94 → deficiency: -6
+### Building a Data Table (Step-by-Step):
+**Goal**: Create data table with Student Name, Roll No, Class → Display rows
 
-Left part: 96 + (-6) = 90  (or 94 + (-4) = 90)
-Right part: (-4) × (-6) = 24
+1. Create Blank project → Add **Flowchart** → Add **Sequence** → Set as Start
+2. Double-click Sequence → Add **Build Data Table** activity
+3. Click **Data Table** button → Popup appears
+4. Remove auto-generated columns (click Remove Column icon)
+5. Add three columns using **+** icon:
+   - Column 1: Name = `Name`, Type = String
+   - Column 2: Name = `Roll_No`, Type = Int32
+   - Column 3: Name = `Class`, Type = String
+6. Click **OK** → Add sample row values in the table
+7. Create variable `MyDataTable` (type: DataTable)
+8. In Build Data Table Output property → Assign `MyDataTable`
+9. Add **For Each Row** activity inside Sequence:
+   - In Expression field, type: `MyDataTable`
+10. Inside For Each Row body, add **Message Box**:
+    - In Text, type:
+    ```
+    row("Name").ToString + "." + row("Roll_No").ToString + "." + row("Class").ToString
+    ```
+    - (`row` is auto-variable holding current row data)
+11. Click **Run** → Each row displays in message box
 
-Answer: 9024 ✅
-```
+> 💡 **Note**: "For Each" iterates collections; "For Each Row" iterates data table rows
 
-### D. Example: Ūrdhva-Tiryagbhyām (32 × 21)
-```
-Step 1 (vertical, units): 2×1 = 2
-Step 2 (crosswise): (3×1) + (2×2) = 3+4 = 7 → tens
-Step 3 (vertical, hundreds): 3×2 = 6
+---
 
-Answer: 672 ✅
-```
+### Building Data Table Using Data Scraping (Dynamic)
+**Goal**: Extract book names from Amazon website into data table
 
-### E. Applications & Significance
-| Domain | Benefit |
+#### Steps:
+1. Add **Flowchart** → Add **Sequence** → Set as Start
+2. Double-click Sequence → Add **Open Browser** activity
+3. In Open Browser URL field, paste Amazon search URL for books
+4. Click **Data Scraping** icon (top-left of UiPath Studio)
+5. Wizard opens → Click **Next**
+6. Pointer appears → Click on **first book name** on webpage
+7. Wizard asks for second similar element → Click **second book name**
+8. Specify column name for extracted data (e.g., "BookName") → Click **Next**
+9. List of extracted names appears in preview window
+10. To extract more data (e.g., price):
+    - Click **Extract correlated data**
+    - Repeat steps 6-8 for price element
+11. To finish: Click **Finish** (or extract next page if needed)
+12. If extracting multiple pages:
+    - Click **Yes** when asked for next page link
+    - Point to "Next Page" button on website
+13. Data scraping generates data table variable (e.g., `ExtractedDataTable`)
+14. Change scope of `ExtractedDataTable` to **Flowchart** (so it's accessible)
+15. Add **Output Data Table** activity:
+    - In Data Table property: `ExtractedDataTable`
+16. Create String variable `result` to receive output
+17. In Output Data Table Text property: assign `result` variable
+18. Add **Message Box** → In Text property: type `result`
+19. Connect all activities in order
+20. Click **Run** → Message box displays scraped data
+
+---
+
+## 11. Clipboard Management
+
+### What is Clipboard Management?
+- Managing clipboard activities: getting text, copying selected text, etc.
+
+### Example: Get Text from Clipboard Using Notepad (Step-by-Step):
+**Goal**: Write in Notepad → Copy text → Extract from clipboard → Display
+
+1. Add **Flowchart** to Designer
+2. Click **Recording** icon (top of Studio) → Select **Desktop** → Click Record
+3. Click **Notepad** to open it
+4. Click Notepad text area → Type your text
+   - Check "Empty field" option to clear existing data first
+   - Press Enter after typing
+5. Click **Edit** menu in Notepad:
+   - When asked for anchor element, select **Format** button (relative element)
+   - From dropdown, select **Select All**
+6. Click **Edit** menu again:
+   - Indicate anchor again → Select **Copy** from dropdown
+   - Text is now in clipboard
+7. Stop recording → Double-click generated Recording Sequence
+8. Scroll down → Drag **Copy Selected Text** activity inside Sequence
+9. Create String variable (e.g., `clipboardText`)
+10. In Copy Selected Text Output property → Assign `clipboardText`
+11. Add **Message Box** activity → In Text property: type `clipboardText`
+12. Click **Run** → Message box displays copied text from clipboard
+
+---
+
+## 12. File Operations with Step-by-Step Examples
+
+### Common Excel File Methods:
+| Method | Purpose |
 |--------|---------|
-| **🧠 Mental Arithmetic** | Reduces steps + paper use; Boosts speed for competitive exams (UPSC, banking, Olympiads) |
-| **💻 Computer Algorithms** | Crosswise multiplication parallels digital multiplier algorithms |
-| **🎓 Educational Value** | Teaches flexible, intuitive approaches; Enhances number sense in children |
-| **🔗 Vedic Knowledge Context** | Reflects broader Indian mathematical tradition: Śulba Sūtras (Pythagorean theorem), Āryabhaṭa, Brahmagupta, Bhāskara |
+| **Read Cell** | Read value from specific cell |
+| **Write Cell** | Write value to specific cell |
+| **Read Range** | Read values from specified range (or entire sheet) |
+| **Write Range** | Write collection of rows to Excel (as data table) |
+| **Append Range** | Add data to end of existing Excel file |
 
-### F. Balanced View
-```
-⚠️ Criticism: 16 sūtras not directly in authentic Vedic texts → Modern reconstruction
-✅ Counter: Computational strategies themselves are ancient (crosswise multiplication predates modern Europe)
-🎯 Best appreciation: Pedagogical system rooted in Indian tradition of concise sūtras + mental computation
-```
+> 💡 **Best Practice**: Always use **Excel Application Scope** activity when working with Excel activities
 
 ---
 
-## IX. SANSKRIT GRAMMAR, NLP CONCEPTS & DARŚANAS
+### Read Cell (Step-by-Step):
+**Goal**: Read value from cell B3 in Excel file
 
-### A. Integrated Nature of Indian Knowledge Traditions
-```
-🔗 Ancient scholarship: Precision + Structure + Meaning
-• Language, logic, mathematics, philosophy = Interconnected disciplines
-• Frameworks resonate with modern: Linguistics + Computation + Cognitive science
-```
-
-### B. Sanskrit Grammar & Principle of Brevity (Lāghava)
-```
-🧠 Pāṇini's System (Aṣṭādhyāyī, c. 5th BCE):
-• Compactness + Precision
-• Meta-rules + Markers + Recursion
-• Generative structure: Roots + Affixes → Valid word forms
-
-🎯 Principle of Brevity (Lāghava):
-• Encode MAXIMUM meaning with MINIMAL expression
-• Benefits: Efficient memorization (oral culture) + Error-resistant transmission + Linguistic stability
-
-💡 Training Outcome: Careful parsing + Avoid ambiguity + Appreciate linguistic economy
-→ Clarity of language = Clarity of thought
-```
-
-### C. Concepts of NLP in Ancient India
-| Ancient Concept | Modern NLP Parallel |
-|----------------|-------------------|
-| **Pāṇini's generative grammar** | Rule-based language models, formal language theory |
-| **Morphology/Syntax/Semantics analysis** | Tokenization, parsing, meaning extraction |
-| **Sphoṭa theory** (Bhartṛhari) | Holistic meaning perception; Gestalt psychology parallel |
-| **Nyāya meaning layers**: Abhidhā (literal), Lakṣaṇā (secondary), Vyañjanā (suggested) | Word-sense disambiguation, pragmatic interpretation |
-| **Lexicons (Nighaṇṭu, Amarakośa)** | Lexical databases, thesauri |
-| **Commentaries (Bhāṣyas)** | Annotated corpora: Context + Usage + Interpretation norms |
-
-### D. The Six Darśanas (Orthodox Philosophical Systems)
-
-| Darśana | Core Text | Focus | Integration of Logic/Language/Metaphysics | Modern Relevance |
-|---------|----------|-------|------------------------------------------|-----------------|
-| **1. Nyāya** | Gautama's Nyāya Sūtras | Logic + Epistemology | Four pramāṇas (perception, inference, comparison, testimony); Sentence structure analysis (ākāṅkṣā, yogyatā, tātparya) | AI knowledge representation; Reasoning under uncertainty |
-| **2. Vaiśeṣika** | Kaṇāda's Vaiśeṣika Sūtras | Atomism + Categories | Six padārthas (substance, quality, action, generality, particularity, inherence); Ontology for language reference | Formal ontology in information science; Early materialism |
-| **3. Sāṃkhya** | Īśvarakṛṣṇa's Sāṃkhya Kārikā | Enumeration of cosmic principles | Puruṣa (consciousness) + Prakṛti (nature) → 23 evolutes; Language denotes evolved products | Cognitive science models (buddhi, ahaṃkāra, manas); Transpersonal psychology |
-| **4. Yoga** | Patañjali's Yoga Sūtras | Practical discipline for liberation | Adopts Sāṃkhya metaphysics + Eight limbs; Mantra practice = sound altering consciousness | Global wellness; Mindfulness-based therapies (MBSR, MBCT) |
-| **5. Pūrva Mīmāṃsā** | Jaimini's Mīmāṃsā Sūtras | Hermeneutics of Vedic ritual | Principles of textual interpretation (literal vs. metaphorical, resolving contradictions, implied meanings) | Modern jurisprudence; Literary theory; Method for language interpretation |
-| **6. Uttara Mīmāṃsā (Vedānta)** | Bādarāyaṇa's Brahma Sūtras | Metaphysics of Brahman/Ātman | Non-dualism (Advaita); Language = lower knowledge pointing to higher; Logic refutes dualism | Postmodern deconstruction parallels; Quantum physics discussions; Leadership/mindfulness frameworks |
-
-### E. Integrative Summary of Darśanas
-```
-🔄 Complementary System:
-Nyāya (logic tools) + Vaiśeṣika (ontology) + Sāṃkhya (cosmic evolution) + Yoga (practice) + Mīmāṃsā (interpretation) + Vedānta (ultimate meaning)
-
-🎯 Holistic Approach: Logic + Language + Metaphysics = Interwoven knowledge framework
-
-🌍 Contemporary Applications:
-• Computer Science: Knowledge representation, ontologies, parsing algorithms
-• Philosophy of Language: Pragmatics, semantics
-• Psychology: Consciousness studies
-• Theology: Comparative religion
-```
+1. Add **Flowchart** → Add **Excel Application Scope** → Connect to Start
+2. Double-click Excel Application Scope → Specify Excel file path
+3. Inside scope, add **Read Cell** activity
+4. In Read Cell properties:
+   - Cell: `B3` (the cell to read)
+   - Create String variable `Result`
+   - In Output property: assign `Result` variable
+5. Add **Message Box** inside scope → In Text: type `Result`
+6. Press **F5** → Message box shows value from cell B3
 
 ---
 
-## X. PRACTICE QUESTIONS – Quick Answers
+### Write Cell (Step-by-Step):
+**Goal**: Write a value to specific Excel cell
 
-### 1. Language Families & Cultural Identity
-```
-✅ Indo-Aryan: North/Central/West → Hindi epics, Bhakti poetry → Shared cultural memory
-✅ Dravidian: South → Sangam literature, classical dance forms → Distinct regional identity
-✅ Austroasiatic: Tribal East/Central → Oral folk traditions → Nature-connected ecological knowledge
-✅ Tibeto-Burman: North-East → Folklore, ritual chants → Unique Himalayan cultural expressions
-🎯 Together: "Unity in Diversity" – multiple identities enriching single national heritage
-```
-
-### 2. Oral Traditions in Tribal Languages: Challenges
-```
-✅ Characteristics: Folk songs, myths, rituals; Community-based; Nature-connected; Memorization-based
-✅ Challenges in Digital Age:
-• Language shift to dominant languages (Hindi/English)
-• Lack of standardized scripts → Digitization difficulty
-• Fewer young speakers → Oral transmission breaking
-• Commercialization distorting authentic forms
-✅ Solutions: Script development + Digital archiving + School curriculum integration + Community documentation
-```
-
-### 3. Bhakti/Sufi Impact on Vernacular Literature
-```
-✅ Transformation: Sanskrit/elite → Vernacular/common people
-✅ Kabir: "Moko kahan dhūndhe re bande" → Direct devotion, caste critique, unity of God
-✅ Mirabai: Krishna bhakti poetry in Hindi/Rajasthani → Female spiritual voice, emotional accessibility
-✅ Impact: Regional languages gained literary prestige; Spiritual messages reached masses; Social reform through poetry
-```
-
-### 4. Modern Literature & Social Reform
-```
-✅ Rabindranath Tagore: "Gitanjali" (spiritual humanism), "Gora" (nationalism vs. identity), women's empowerment themes
-✅ Premchand (Hindi): "Godaan" – Peasant life, caste oppression, gender injustice
-✅ Mahasweta Devi (Bengali): Tribal rights, subaltern voices
-✅ Common Thread: Literature as tool for social critique + National consciousness + Identity formation
-```
-
-### 5. Sanskrit's Influence on Southeast Asia
-```
-✅ Spread Mechanisms: Trade, Buddhist/Hindu missions, Royal patronage
-✅ Languages: Thai, Khmer, Javanese, Malay borrowed Sanskrit vocabulary (e.g., "Raja", "Dharma", "Mandala")
-✅ Scripts: Pallava script → Adapted into Thai, Khmer, Javanese scripts
-✅ Literature: Rāmāyaṇa/Mahābhārata retellings in local languages (Ramakien-Thailand, Kakawin Java)
-✅ Legacy: Cultural diplomacy; Shared heritage; UNESCO recognition of regional adaptations
-```
-
-### 6. Ancient Indian Lexicography (Nighaṇṭu & Amarakośa)
-```
-✅ Nighaṇṭu (Yāska, c. 6th-5th BCE): Thematic Vedic word lists (earth/water/sky synonyms); Basis for Nirukta (etymology)
-✅ Amarakośa (Amarasiṃha, c. 4th-5th CE): Verse-form thesaurus; Categories: gods, earth, humans, animals; Standard Sanskrit learner's lexicon
-✅ Function: Precise memorization + Cross-text referencing + Standardized meanings → Essential for oral→written transition
-```
-
-### 7. Sphoṭa Theory vs. Modern Phonology
-```
-✅ Sphoṭa (Bhartṛhari, 5th CE): Meaning emerges as holistic cognitive flash from whole word/sentence; Phonemes merely "reveal" (vyakti) this unit
-✅ Modern Parallel: Categorical perception (listeners perceive /ba/ vs /pa/ as distinct categories); Gestalt psychology (whole ≠ sum of parts)
-✅ Key Difference: Sphoṭa = Metaphysical indivisible meaning unit; Modern = Compositional semantics constructed rapidly (milliseconds)
-```
-
-### 8. Preserving Intangible Heritage (Examples + Measures)
-```
-✅ Examples:
-• Bharatanāṭyam: Mudras + Bhakti + Philosophy encoded in movement
-• Chhau dance (UNESCO): Masks + Martial + Epics retelling
-• Sohrai painting (Jharkhand): Tribal agricultural rituals
-
-✅ Threats: Loss of patrons, commercialization, weakening oral transmission
-
-✅ Preservation Measures:
-• 📹 Documentation: Video archiving, digital databases
-• 🏛️ Govt schemes: Sangeet Natak Akademi awards, Guru-Śiṣya Paramparā Yojana
-• 📚 Curriculum: Integrate folk arts into school education
-• 🏘️ Community: Living heritage museums + cultural tourism
-• ⚖️ Legal: UNESCO 2003 Convention protection
-```
+1. Add **Flowchart** → Add **Excel Application Scope** → Connect to Start
+2. Double-click scope → Specify Excel file path
+3. Inside scope, add **Write Cell** activity
+4. In Write Cell properties:
+   - Range: Cell address (e.g., `C5`)
+   - Value: Text or variable to write
+5. Press **F5** → Open Excel file to see new value in specified cell
 
 ---
 
-## 🧠 MEMORY TIPS & MNEMONICS
+### Read Range (Step-by-Step):
+**Goal**: Read entire Excel sheet or specified range into data table
 
-### Language Families Order
-**"I-D-A-T"** → **I**ndo-Aryan → **D**ravidian → **A**ustroasiatic → **T**ibeto-Burman
-
-### Vedic Mathematics Sūtras (First 5 Mnemonic)
-**"E-N-U-P-S"** → **E**kādhikena, **N**ikhilam, **Ū**rdhva-Tiryagbhyām, **P**arāvartya, **S**hūnyam...
-
-### Six Darśanas Order (Traditional)
-**"N-V-S-Y-P-V"** → **N**yāya, **V**aiśeṣika, **S**āṃkhya, **Y**oga, **P**ūrva Mīmāṃsā, **V**edānta
-
-### Purāṇas Knowledge Scope Mnemonic
-**"C-G-P-S-E"** → **C**osmology, **G**enealogies, **P**ilgrimage, **S**cience/Tech, **E**cology
-
-### Paleography Scripts Timeline
-**"B-K-G-D-G-T"** → **B**rāhmī (3rd BCE) → **K**haroṣṭhī → **G**upta → **D**evanāgarī → **G**rantha → **T**ibetan
-
-### Literature Preservation Flow
-```
-Oral Traditions (Vedas) → Scriptures (Written corpus) → Folklore (Popular retelling) → Living Tradition (Continuous adaptation)
-```
-
----
-# 📚 ITK Unit 4: Condensed Notes for Quick Revision
-## *Traditional Indian Knowledge Systems: Art, Architecture, Music & Metallurgy*
+1. Add **Flowchart** → Add **Excel Application Scope** → Connect to Start
+2. Inside scope, add **Read Range** activity
+3. Read Range produces a data table → Create DataTable variable (e.g., `excelData`)
+4. In Read Range Output property: assign `excelData`
+5. Add **Output Data Table** activity inside scope:
+   - Data Table property: `excelData`
+   - Create String variable `Result`
+   - Text property: assign `Result`
+6. Add **Message Box** → In Text: type `Result`
+7. Press **F5** → Message box displays Excel data as string
 
 ---
 
-## I. ART, TECHNOLOGY & ENGINEERING INTEGRATION
+### Write Range (Step-by-Step):
+**Goal**: Build data table → Write all rows to Excel file
 
-### A. Sculpture + Engineering
-```
-🗿 Key Principle: Artistic expression + Technical precision = Enduring monuments
-```
-| Aspect | Technical Knowledge | Examples |
-|--------|-------------------|----------|
-| **Material Science** | Hard stone selection, grain direction, weathering resistance | Granite temples of South India |
-| **Structural Integrity** | Weight distribution, load-bearing calculations, center of gravity | Kailasa Temple, Ellora (monolithic rock-cut) |
-| **Geometry & Symmetry** | Precise proportions, mandala-based layouts | Khajuraho temples, Konark Sun Temple |
-| **Tool Technology** | Chisels, hammers, lost-wax casting (cire perdue) | Bronze Nataraja, Chola icons |
-
-> ✅ **Lost-Wax Casting Process**: Wax model → Clay mould → Heat (wax melts) → Molten metal poured → Break mould → Finish statue
-
-### B. Painting + Chemistry/Optics
-| Element | Scientific Basis | Example |
-|---------|----------------|---------|
-| **Fresco Technique** | Lime + sand plaster carbonates → binds pigments permanently | Ajanta Caves (2nd BCE–6th CE) |
-| **Pigment Sources** | Minerals: Ochre (red), Lapis lazuli (blue), Goethite (yellow), Malachite (green) | Ajanta's 1500-year colour preservation |
-| **Binder Chemistry** | Animal glue, plant resins, jaggery → pigment adhesion | Prevents flaking in humid caves |
-| **Optical Effects** | Layering, shading, perspective → depth illusion | Bodhisattva paintings, Ajanta |
-
-### C. Handicrafts + Indigenous Engineering
-```
-🧵 Textiles: Loom mechanics + tension control + pattern algorithms
-🏺 Pottery: Clay properties + kiln temperature + shrinkage control
-🪵 Woodwork: Grain selection + joinery (do-ti, sanghal) + natural finishes
-🔨 Metalwork: Alloy ratios + lost-wax casting + recycling practices
-```
-
-#### Handloom Weaving = Early "Programmable" Technology
-- **Fly shuttle + Jacquard mechanism** → Pattern control via punched cards
-- **Patola double ikat** → Exact thread count = zero-waste precision weaving
-- **Legacy**: Inspired early computing concepts (Babbage's analytical engine)
+1. Add **Build Data Table** activity:
+   - Double-click → Remove auto columns → Add your columns using **+**
+   - Example: Column "Name" (String), Column "Roll" (Int32)
+   - Add sample row values
+2. Create DataTable variable (e.g., `myTable`)
+3. In Build Data Table Output property: assign `myTable`
+4. Add **Excel Application Scope** → Specify target Excel file path
+5. Inside scope, add **Write Range** activity
+6. In Write Range properties:
+   - Data Table: `myTable`
+   - Range: Leave empty (writes from start) or specify (e.g., `A1`)
+7. Click **Run** → Excel file now contains your data table rows
 
 ---
 
-## II. TRADITIONAL HANDICRAFTS: Indigenous Knowledge + Sustainability
+### Append Range (Step-by-Step):
+**Goal**: Read data from one Excel file → Append to another Excel file
 
-### A. Textiles (Handloom/Handicraft)
-| Component | Indigenous Knowledge | Sustainable Practice | Community Wisdom |
-|-----------|-------------------|-------------------|-----------------|
-| **Natural Dyes** | Indigo (plant), Madder (root), Lac (insect), Ochre (mineral) | Biodegradable, non-toxic, water recycling in dyeing | Oral recipes preserved in weaver families (e.g., Chhipa block-printers) |
-| **Fibres** | Cotton, silk, wool, jute | Zero synthetic waste, low carbon footprint | Khadi movement = local production + self-reliance |
-| **Techniques** | Patola ikat, Bandhani tie-dye, Jamdani weaving | Exact thread counts = no material waste | Cooperative societies, hereditary skill transfer |
-
-### B. Pottery (Terracotta/Glazed)
-| Knowledge Area | Detail |
-|---------------|--------|
-| **Clay Types** | Alluvial (river), Laterite (tropical), Ball clay (high plasticity) |
-| **Tempering** | Sand, crushed sherds (grog) → prevents cracking during firing |
-| **Firing** | Oxidation (red ware) vs. Reduction (black ware) atmospheres |
-| **Sustainability** | Local clay, rice husk fuel, broken pots recycled as grog → circular economy |
-| **Community** | Kumhar caste, seasonal migration to clay sources, apprenticeship from childhood |
-
-### C. Woodwork (Carving/Joinery)
-```
-🌳 Timber Selection:
-• Teak = durability + water resistance (ships, temples)
-• Sandalwood = fragrance + fine carving (icons, furniture)
-• Mango = affordable + workable (daily items)
-
-🔗 Joinery Techniques:
-• Do-ti / Sanghal = interlocking joints → no metal nails needed
-• Preserves tool life + allows wood expansion/contraction
-
-♻️ Sustainability:
-• Selective felling + shade seasoning (no energy-intensive kilns)
-• Natural oils (neem, linseed) + insect lac for polish
-• Sawdust reused as packing/fuel
-```
-
-### D. Metal Craft (Lost-Wax/Alloying)
-| Craft | Indigenous Knowledge | Sustainability | Cultural Encoding |
-|-------|-------------------|---------------|-----------------|
-| **Dokra/Dhokra** | Non-ferrous casting, wax core, clay mould layers | Metal recycling, renewable charcoal fuel | Ritual artifacts encode cosmology (e.g., 5-flame lamp = Panchamahabhutas) |
-| **Panchaloha** | Five-metal alloy (gold, silver, copper, tin, iron) for temple idols | Melting old utensils for new artefacts | Alloy ratios prescribed in Shilpa Shastras |
-| **Iron Pillar** | High-phosphorus iron + forge-welding → corrosion resistance | Minimal processing, long lifespan | Demonstrates ancient materials engineering |
-
-### E. Cross-Cutting Themes (Memory Flow)
-```
-Indigenous Knowledge → Material science + tacit skills + symbolic design
-       ↓
-Sustainable Practices → Local materials + minimal waste + low energy + biodegradability
-       ↓
-Community Wisdom → Guild structures + hereditary skills + ritual obligations + cooperative production
-```
-
-> ✅ **Modern Relevance**: These traditions inform sustainable design, fair trade, cultural tourism — but face challenges from industrialization and loss of patronage.
+1. Add **Flowchart** → Add **Excel Application Scope** (for source file) → Connect to Start
+2. Inside scope, add **Read Range** activity:
+   - Create DataTable variable `sourceData`
+   - In Output property: assign `sourceData`
+3. Add another **Excel Application Scope** (for target file) or reuse same scope
+4. Inside scope, add **Append Range** activity:
+   - Specify target Excel file path
+   - In Data Table property: assign `sourceData` (from Read Range)
+5. Press **F5** → Open target Excel file → See appended data at end
 
 ---
 
-## III. INDIAN PERFORMING ARTS: Music, Dance, Drama, Theatre
+## 13. CSV/Excel to Data Table and Vice Versa (Step-by-Step)
 
-### A. Indian Music (Hindustani + Carnatic)
-```
-🎵 Core Framework: Raga (melody) + Tala (rhythm) + Shruti (microtones)
-```
+### Part A: Read Excel/CSV → Create Data Table
 
-#### Hindustani vs. Carnatic: Quick Comparison
-| Feature | Hindustani (North) | Carnatic (South) |
-|---------|-----------------|-----------------|
-| **Origin** | Vedic + Persian/Afghan influence | Vedic + Dravidian continuity |
-| **Improvisation** | High (Alap, Taan, Jhala) | Structured (Kriti, Varnam focus) |
-| **Key Forms** | Dhrupad, Khayal, Thumri, Ghazal | Kriti, Varnam, Tillana, Ragam-Tanam-Pallavi |
-| **Instruments** | Sitar, Sarod, Tabla, Sarangi | Veena, Mridangam, Ghatam, Violin (adapted) |
-| **Raga System** | Time/season-based performance | 72 Melakarta parent scales |
-| **Notable Figures** | Tansen, Amir Khusrau, Bade Ghulam Ali | Purandara Dasa, Tyagaraja Trinity |
-
-#### Shruti System (Microtonal Precision)
-- **22 Shrutis** = Unequal microtonal divisions of octave (vs. Western 12 semitones)
-- **Purpose**: Enables nuanced emotional expression in ragas
-- **Mathematical Basis**: Ratios of string lengths/frequencies → ancient acoustic science
-
-### B. Indian Classical Dance (Rooted in Natya Shastra)
-```
-💃 8 Classical Forms: Bharatanatyam, Kathak, Kuchipudi, Odissi, Manipuri, Kathakali, Sattriya, Mohiniyattam
-```
-
-#### Core Elements (All Forms)
-| Element | Function | Example |
-|---------|----------|---------|
-| **Abhinaya** | Facial expression + eye movement → emotional communication | Bharatanatyam's nuanced bhava |
-| **Mudras** | Hand gestures = sign language (500+ combinations) | Kartarimukha = scissors/arrow/separation |
-| **Tala** | Rhythmic cycles mapped to footwork + hand claps | Adi tala (8 beats), Rupaka tala (6 beats) |
-| **Rasa** | Evoking emotional essence in audience | Navarasas framework (see below) |
-
-#### Navarasas (Nine Emotional Flavours) – Memory Mnemonic
-**"S-H-K-R-V-B-B-A-S"**
-| Rasa | Emotion | Typical Context |
-|------|---------|---------------|
-| **S**hringara | Love/Beauty | Romantic scenes, divine love |
-| **H**asya | Laughter/Comic | Humorous episodes |
-| **K**aruna | Compassion/Sadness | Tragic moments, separation |
-| **R**audra | Anger/Fury | Battle scenes, conflict |
-| **V**eera | Heroism/Courage | Warrior narratives |
-| **B**hayanaka | Fear/Terror | Supernatural, danger |
-| **B**ibhatsa | Disgust/Aversion | Moral repulsion |
-| **A**dbhuta | Wonder/Astonishment | Miracles, divine revelation |
-| **S**hanta | Peace/Serenity | Meditation, liberation |
-
-> ✅ **Rasa Production Formula** (Natya Shastra):  
-> **Vibhava** (stimuli) + **Anubhava** (consequences) + **Vyabhicharibhava** (transitory emotions) = **Rasa** (aesthetic experience)
-
-### C. Drama & Theatre Evolution
-```
-🎭 Ancient: Sanskrit theatre (Kalidasa's Shakuntala, Bhasa's plays)
-🎪 Medieval: Folk forms (Yakshagana-Karnataka, Jatra-Bengal, Nautanki-North, Bhavai-Gujarat)
-🎬 Modern: Social realism + experimental fusion (addressing caste, gender, poverty)
-```
-
-#### Folk Theatre Features
-- 🌳 Open-air stages, minimal props, audience interaction
-- 🎵 Music + dance + dialogue integrated
-- 🗣️ Local language + improvisation = accessibility to rural masses
-- 🔄 Ritual + entertainment blend (e.g., Ramlila, Krishnalila)
+#### Steps:
+1. Add **Flowchart** → Add **Excel Application Scope** → Specify file path
+2. Inside scope, add **Read Range** activity:
+   - Creates data table from Excel/CSV
+   - Create DataTable variable (e.g., `fileData`)
+   - In Output property: assign `fileData`
+3. Add **Output Data Table** activity:
+   - Data Table property: `fileData`
+   - Create String variable `result`
+   - Text property: assign `result`
+4. Add **Message Box** → In Text: type `result`
+5. Press **F5** → Message box shows file data as string
 
 ---
 
-## IV. ORIGIN & EVOLUTION OF INDIAN CLASSICAL MUSIC (Timeline)
+### Part B: Create Data Table → Write to Excel/CSV
 
-```
-📅 Vedic Period (1500–500 BCE)
-• Sama Veda = Earliest musical text (chanted verses with svara/pitch)
-• 3 notes → Udatta, Anudatta, Svarita → Foundation of melodic system
-
-📅 Classical Period (500 BCE–500 CE)
-• Natya Shastra (Bharata Muni): 22 shrutis, 7 shuddha svaras, grama scales, 32 tala patterns
-• Music integrated with theatre; veena, flute, mridangam developed
-
-📅 Medieval Period (600–1300 CE)
-• Brihaddeshi (Matanga, 8th CE): First use of term "Raga" ("that which colours the mind")
-• Sangeet Ratnakara (Sarngadeva, 13th CE): 264 ragas, melakarta basis
-• Regional courts → Split into Hindustani (North) + Carnatic (South)
-
-📅 Emergence of Two Traditions (1300–1800 CE)
-• Hindustani: Persian influence → Dhrupad → Khayal → Gharana system (Tansen, Miyan Ki Todi)
-• Carnatic: Purandara Dasa (15th CE) = "Father"; Trinity (Tyagaraja, Dikshitar, Syama Sastri) = Kriti composers
-
-📅 Modern Period (20th CE–Present)
-• Institutionalization: Music academies, university degrees, AIR broadcasts
-• Global fusion: Ravi Shankar, Zakir Hussain → Cross-cultural collaborations
-• Digital pedagogy + preservation while maintaining raga-tala core
-```
-
-> ✅ **Memory Flow**: Sama Veda → Natya Shastra → Brihaddeshi → Sangeet Ratnakara → Gharanas/Trinity → Modern Academies
+#### Steps:
+1. Add **Build Data Table** activity:
+   - Double-click → Configure columns (name, type)
+   - Add sample row values
+2. Create DataTable variable (e.g., `newTable`)
+3. In Build Data Table Output property: assign `newTable`
+4. Add **Excel Application Scope** → Specify target file path
+5. Inside scope, add **Write Range** activity:
+   - Data Table property: `newTable`
+   - Range: Leave empty or specify start cell
+6. Click **Run** → Target file now contains your data table
 
 ---
 
-## V. MAYAMATAM: Classical Architecture Text (Vastu Shastra)
 
-### A. Overview
-```
-📜 Mayamatam = Practical manual for master builders (Sthapati)
-📍 Focus: South Indian temple/house construction
-📅 Date: Compiled 5th–10th CE (attributed to mythical architect Maya)
-📚 Structure: 36 chapters covering architecture, iconography, town planning, rituals
-```
-
-### B. Five-Stage Building Process (Memory: "S-G-F-S-C")
-| Stage | Sanskrit Term | Key Activities |
-|-------|--------------|---------------|
-| **1. Site Examination** | Bhupariksha | Soil testing: smell, colour, taste, sound; white soil = temples, black = residential |
-| **2. Ground Preparation** | Bhumi Shuddhi | Leveling, purification rituals, astrological timing |
-| **3. Foundation Laying** | Adhisthana | Stone/brick foundation with drainage considerations |
-| **4. Superstructure** | Prasada | Pillars, walls, roof using proportional ratios (1:1, 2:1, 3:2) |
-| **5. Consecration** | Kumbhabhishekam | Ritual animation of temple as cosmic body |
-
-### C. Core Design Principles
-```
-🧭 Orientation:
-• East-facing preferred (sunrise alignment)
-• Windows/doors/wells positioned per 8 directions (Dikpalas) → health, wealth, protection benefits
-
-📐 Measurement System (Manam):
-• Modules: Angula (finger width) → Dhanurmushti (fist) → Hasta (cubit)
-• Rational ratios only (no irrationals) → structural harmony
-
-🔲 Padavinyasa Grid:
-• Site divided into 64 (8×8) or 81 (9×9) squares (padas)
-• Each pada assigned to deity/function → no space unplanned
-• Centre (Brahmasthana) = sacred/open space
-
-⛩️ Temple Anatomy:
-• Garbhagriha (womb-chamber): Dark cube for deity
-• Mandapa (hall): Ritual assembly space
-• Shikhara (tower): Height mathematically related to sanctum width → visual harmony + load transfer
-• Stupi (finial): Cosmic axis marker
-
-🌞 Astronomical Integration:
-• Central axis aligns with equinox sunrise → temple as functional astronomical instrument
-```
-
-### D. Significance in Indian Knowledge Systems
-```
-✅ "Living Text": Still used by Sthapatis in Tamil Nadu, Kerala, Andhra for temple restoration
-✅ Holistic Design: Structural mechanics + environmental science + symbolic cosmology merged
-✅ Executable Algorithms: Dome curvature, pillar spacing, drainage slopes = architectural "cookbook"
-✅ Sustainable Principles: Local materials, climate-responsive features (thick walls, shaded courtyards)
-✅ Modern Application: Referenced by UNESCO/INTACH for scientifically authentic restorations
-```
-
-> ⚠️ **Limitation**: Doesn't address modern materials (RCC, steel) or high-rise buildings — but design logic (modular grids, directional harmony) informs green architecture today.
+# UNIT – IV: Handling Events & Controls
+## Exam Preparation Notes (Simple & Detailed)
 
 ---
 
-## VI. IRON & STEEL TECHNOLOGY IN INDIA
+## 1. Taking Control of the Controls (Introduction)
 
-### A. Ancient Indian Metallurgy Highlights
-| Artifact | Period | Technical Achievement | Modern Relevance |
-|----------|--------|---------------------|-----------------|
-| **Delhi Iron Pillar** | 4th CE (Gupta) | High-phosphorus iron (0.15% P) + forge-welding → corrosion-resistant passive layer (misawite) | Studied for rust-proof coatings; demonstrates ancient materials engineering |
-| **Wootz Steel** | 300 BCE–1700 CE (South India) | Crucible steel, 1.5–2.0% carbon, banded cementite microstructure → Damascus blade patterns | European metallurgists couldn't replicate until 20th century; informs modern alloy design |
-| **Zinc Distillation** | 12th CE (Zawar, Rajasthan) | Downward distillation process (unique globally) → pure zinc production | Foundation for modern zinc metallurgy |
+### What is this chapter about?
+- After learning workflows and variables, we now learn **how to interact with UI controls**
+- Controls = buttons, textboxes, menus, windows in applications
+- We need to: **find controls**, **wait for them**, **act on them** (click, type, read)
 
-### B. Steel Production Basics (Memory Flow)
-```
-Iron Ore → Smelting (remove impurities) → Wrought Iron/Pig Iron
-       ↓
-Carbon Control (0.2–2.1%) → Steel (stronger + more flexible than pure iron)
-       ↓
-Heat Treatment (quenching, tempering) → Desired hardness/toughness balance
-```
-
-### C. Modern Developments
-- **Alloy Steels**: Chromium (stainless), Nickel (toughness), Manganese (hardness)
-- **Processes**: Basic Oxygen Furnace, Electric Arc Furnace (scrap recycling)
-- **Applications**: Construction, transportation, tools, machinery, defense
-
-> ✅ **Key Insight**: Ancient Indian metallurgy (wootz, iron pillar) = blend of empirical observation + systematic processing → precursor to modern materials science.
+### Why is this important?
+- RPA = extracting info from UI + taking actions on UI
+- Sometimes normal methods fail → need advanced techniques like OCR
+- This chapter teaches selectors, UiExplorer, events, recorders, and screen scraping
 
 ---
 
-## VII. METALS IN MEDICINE: Rasashastra (Ayurvedic Alchemy)
+## 2. Finding and Attaching Windows
 
-### A. What is Rasashastra?
-```
-🔬 Branch of Ayurveda dealing with alchemical preparations using:
-• Metals (Dhatu): Gold, silver, copper, iron, mercury, zinc, tin, lead
-• Minerals (Khanija): Mica, sulfur, alum, salts
-• Gems (Ratna): Pearl, coral, diamond (powdered)
+### What is Attach Window Activity?
+- Used to **attach to an already opened window** (like Notepad, Excel, browser)
+- Auto-generated when using Basic/Desktop recorder
+- Helps robot "focus" on correct window before performing actions
 
-📚 Key Texts: Rasaratnakara, Rasarnava, Rasaratnasamuchchaya (8th–14th CE)
-🎯 Goal: Transform base substances into therapeutic agents (Rasayana = rejuvenation)
-```
+### Step-by-Step: Attach Window with Notepad (Simple Steps)
+1. Create Blank project → Give meaningful name
+2. Drag **Flowchart** to Designer panel
+3. Drag **Click** activity → Right-click → "Set as Start node"
+4. Double-click Click → Click "Indicate on screen" → Click Notepad icon
+5. Drag **Attach Window** activity → Connect to Click activity
+6. Double-click Attach Window → Click "Click Window on Screen" → Click Notepad window
+7. Drag **Type Into** activity INSIDE Attach Window
+8. Double-click Type Into → Click "Indicate element inside window" → Click where to type in Notepad
+9. In Text property of Type Into: type your message (e.g., "Hello from Robot")
+10. Click **Run** → Notepad opens, robot types your text
 
-### B. Core Principle
-```
-"Yatha Brahmande Tatha Pinde" = As in macrocosm, so in microcosm
-→ Properly processed metals/minerals correct elemental imbalances (Panchamahabhutas) in body
-```
-
-### C. Two-Step Processing (Critical for Safety)
-
-#### 1️⃣ Shodhana (Purification)
-```
-Purpose: Remove toxins/impurities (Amadosha) from raw metals
-Method: Heat metal → Quench in specific media:
-• Cow's milk, ghee, buttermilk
-• Herbal decoctions (Triphala, garlic juice)
-• Acidic fruit juices (lemon, tamarind)
-
-Example: Mercury (Parada) purification
-→ Grind with garlic juice (binds impurities) → Distill through 7 cloth layers
-```
-
-#### 2️⃣ Marana (Incineration → Bhasma)
-```
-Purpose: Convert metal into fine, bioavailable ash (Bhasma)
-Method: 
-• Grind purified metal with herbal juices
-• Seal in crucible (puta) → Repeated heating/cooling cycles (7, 10, 14, or 100 times)
-• Final product: Nano-particle ash that:
-  ✓ Floats on water
-  ✓ No electrical conductivity
-  ✓ Rubs into skin without irritation
-
-Quality Test: Bhasma should be so fine it doesn't stain fingers when rubbed
-```
-
-### D. Key Bhasmas & Uses
-| Bhasma | Metal | Therapeutic Use | Modern Validation |
-|--------|-------|----------------|------------------|
-| **Swarna Bhasma** | Gold | Immunity, memory, vitality, anti-aging | Nano-gold particles show anti-inflammatory effects |
-| **Lauha Bhasma** | Iron | Anemia, weakness, chronic fatigue | Iron oxide nanoparticles enhance bioavailability |
-| **Tamra Bhasma** | Copper | Liver disorders, obesity, skin diseases | Copper ions have antimicrobial + enzymatic roles |
-| **Abhraka Bhasma** | Mica | Respiratory issues, general tonic | Silicate nanoparticles may support lung tissue |
-| **Makaradhwaja** | Mercury+Sulfur+Gold | Aphrodisiac, immune booster, rejuvenation | Complex formulation; requires strict quality control |
-
-### E. Scientific Validation + Safety Caution
-```
-✅ Modern Studies Confirm:
-• Properly prepared bhasmas = metal oxide nanoparticles (10–100 nm)
-• Enhanced therapeutic action due to high surface area + controlled oxidation state
-• Low toxicity when particle size/dose regulated
-
-⚠️ Critical Warning:
-• Improper preparation = toxic heavy metal retention (liver/kidney/nerve damage)
-• AYUSH Ministry mandates: XRF, ICP-MS, particle size analysis for commercial products
-• Core Principle: "Detoxified metals = medicine; Raw metals = poison"
-
-🎯 Best Practice: Use only under qualified Ayurvedic practitioner + lab-tested formulations
-```
-
-### F. Rasashastra's Modern Relevance
-```
-💡 Principles Being Re-examined For:
-• Nano-medicine development (controlled particle size = targeted delivery)
-• Herb-metal synergies (enhanced bioavailability + reduced side effects)
-• Sustainable pharmaceutical chemistry (natural processing vs. synthetic)
-
-🔬 Research Frontiers:
-• Mechanism of bhasma action at cellular/molecular level
-• Standardization protocols bridging traditional + modern analytical methods
-• Clinical trials for specific formulations (e.g., Lauha Bhasma for anemia)
-```
+> 💡 **Key Point**: Attach Window ensures actions happen in correct window, even if multiple windows are open
 
 ---
 
-## VIII. PRACTICE QUESTIONS – Quick Answers
+## 3. Finding the UI Control
 
-### 1. Sculpture + Engineering Integration (Khajuraho/Ellora)
-```
-✅ Material Science: Granite selection + grain alignment → weathering resistance
-✅ Load Distribution: Center of gravity calculations → tall figures don't topple
-✅ Tool Tech: Lost-wax casting → fine bronze details; chisels + hammers for stone
-✅ Example: Kailasa Temple (Ellora) = monolithic rock-cut → required precise removal sequencing + structural support planning
-```
+### What are "Find Control" Activities?
+- Activities that help robot **locate UI elements** on screen
+- Used when selector is unreliable or element changes frequently
 
-### 2. Ajanta Fresco: Chemistry + Preservation
-```
-✅ Plaster: Lime + sand + organic binders (jaggery, plant gum) → slow carbonation locks pigments
-✅ Pigments: Mineral-based (ochre-red, lapis-blue) + stable binders → resist fading
-✅ Microenvironment: Cave = constant temp, no rain, alkaline plaster → prevents acid degradation
-✅ Result: Colours intact for 1500+ years → testament to ancient chemo-engineering
-```
+### Types of Find Control Activities:
 
-### 3. Classical Dance as Embodied Knowledge System
-```
-✅ Linguistic: 500+ mudras = sign language (single gesture = word/sentence)
-✅ Mathematical: Tala cycles (8-beat adi, 6-beat rupaka) mapped to footwork = real-time rhythmic computation
-✅ Emotional: Navarasas produced by codified facial muscle contractions (abhinaya) = emotional grammar
-✅ Integration: Dance = non-verbal communication system encoding language + math + emotion
-```
-
-### 4. Mayamatam vs. Modern Building Codes (NBC India)
-```
-✅ Similarities: 
-• Site selection criteria (soil testing, drainage)
-• Orientation rules (sunlight, ventilation)
-• Proportional design (structural harmony)
-
-✅ Differences:
-• Mayamatam: Ritual integration, cosmological alignment, symbolic grids
-• NBC: Fire safety, seismic codes, modern materials (RCC, steel)
-
-✅ Convergence: Both emphasize climate-responsive, sustainable design principles
-```
-
-### 5. Wootz Steel + Delhi Iron Pillar: Metallurgical Uniqueness
-```
-✅ Wootz Steel:
-• Crucible process, high carbon (1.5–2%), banded cementite microstructure
-• Forged properly → damascene pattern + exceptional edge retention
-• European replication failed until 20th century → informs modern alloy design
-
-✅ Delhi Iron Pillar:
-• High-phosphorus iron (0.15% P) + low sulfur/magnesium
-• Forms protective misawite (iron hydrogen phosphate) layer → passivation against rust
-• Studied today for corrosion-resistant coating development
-```
-
-### 6. Guild System (Shreni) in Traditional Handicrafts
-```
-✅ Functions:
-• Quality control: Standardized recipes, tool designs, finishing techniques
-• Skill transmission: Systematic apprenticeship, codified training manuals
-• Market regulation: Price fixing, trade route protection, dispute resolution
-• Social security: Loans, endowments, temple patronage for members
-
-✅ Examples:
-• Textile guilds: Controlled indigo vat fermentation, block-carving secrets
-• Metal guilds: Regulated lost-wax wax compositions, furnace temperatures
-• Legacy: Ensured knowledge survival across generations despite political changes
-```
+| Activity | Purpose | When to Use |
+|----------|---------|-------------|
+| **Anchor Base** | Find element by looking at nearby element | When selector is unreliable |
+| **Element Exists** | Check if UI element is present | When element may/may not appear |
+| **Element Scope** | Attach to one element, perform multiple actions | When many actions on same element |
+| **Find Children** | Find all child elements of a parent | When processing lists/tables |
+| **Find Element** | Find specific UI element, wait for it | When element loads slowly |
+| **Find Relative Element** | Find element using nearby fixed element | When selector is weak |
+| **Get Ancestor** | Get parent/ancestor of an element | When you need container info |
+| **Indicate on Screen** | Select element at runtime | For dynamic/flexible selection |
 
 ---
 
-## 🧠 MEMORY TIPS & MNEMONICS
+### Anchor Base (Detailed Steps)
+**Use when**: You can't rely on selector alone
 
-### Handicraft Sustainability Flow
-**"L-M-C-W"** → **L**ocal materials → **M**inimal waste → **C**ommunity wisdom → **W**aste recycling
-
-### Navarasas Mnemonic
-**"S-H-K-R-V-B-B-A-S"** = **S**hringara, **H**asya, **K**aruna, **R**audra, **V**eera, **B**hayanaka, **B**ibhatsa, **A**dbhuta, **S**hanta
-
-### Mayamatam 5 Stages
-**"S-G-F-S-C"** → **S**ite exam → **G**round prep → **F**oundation → **S**uperstructure → **C**onsecration
-
-### Rasashastra Processing
-**"S-M"** → **S**hodhana (purify) → **M**arana (incinerate to bhasma)
-
-### Music Evolution Timeline
-**"S-N-B-S-G-M"** → **S**ama Veda → **N**atya Shastra → **B**rihaddeshi → **S**angeet Ratnakara → **G**haranas/Trinity → **M**odern Academies
-
-### Bhasma Quality Test
-**"F-N-R"** → **F**loats on water + **N**o conductivity + **R**ubs without irritation = Properly prepared
-
----
-# 📚 ITK Unit 5: Condensed Notes for Quick Revision
-## *Traditional Indian Knowledge Systems: Astronomy, Mathematics, Logic & Medicine*
+1. Drag **Flowchart** → Drag **Anchor Base** → Connect to Start
+2. Double-click Anchor Base → You see two slots:
+   - **Anchor**: Drag "Find Element" here (the nearby stable element)
+   - **Action**: Drag "Type Into" here (what you want to do)
+3. For Anchor: Indicate the stable nearby element (e.g., a label)
+4. For Action: Indicate the target element + type your text
+5. Robot finds target by looking relative to anchor → performs action
 
 ---
 
-## I. HELIOCENTRIC SYSTEM
+### Element Exists (Detailed Steps)
+**Use when**: You're not sure if element will appear
 
-### A. Core Concept
-```
-☀️ Sun-centered model: Planets (including Earth) revolve around Sun
-🔄 Replaced: Geocentric model (Earth-centered)
-🎯 Significance: Paradigm shift → Evidence-based science over tradition
-```
-
-### B. Key Scientists & Contributions
-| Scientist | Contribution | Key Evidence/Law |
-|-----------|-------------|-----------------|
-| **Copernicus** (1543) | Systematic heliocentric theory | *De Revolutionibus Orbium Coelestium* |
-| **Galileo** | Telescopic observations | Phases of Venus; Moons of Jupiter → Not all orbits Earth |
-| **Kepler** | Laws of planetary motion | 1) Elliptical orbits 2) Equal areas in equal times 3) T² ∝ a³ |
-| **Newton** | Unified celestial/terrestrial physics | Gravity governs both falling apples & orbiting planets |
-
-### C. Logical Perspective (Memory Flow)
-```
-Observation → Reasoning → Mathematical Analysis → Evidence-based Conclusion
-       ↓
-Challenges tradition → Emphasizes empirical proof → Foundation of scientific inquiry
-```
-
-> ✅ **Key Insight**: Heliocentric model = Triumph of observation + mathematics over dogma
+1. Drag **Element Exists** from Activities panel
+2. Double-click → Click "Indicate on screen" → Click the UI element
+3. Create Boolean variable (e.g., `isFound`)
+4. In Properties panel → Exists property → Assign `isFound` variable
+5. Use **If activity**: Condition = `isFound = True`
+   - Then: Do action if element exists
+   - Else: Handle missing element case
 
 ---
 
-## II. SULBASUTRAS (Geometry for Vedic Altars)
+### Element Scope (Detailed Steps)
+**Use when**: Multiple actions on same element
 
-### A. Basics
-| Feature | Detail |
-|---------|--------|
-| **Period** | c. 800–200 BCE |
-| **Purpose** | Geometry for constructing Vedic fire altars (yajna vedis) |
-| **Part of** | Kalpa Sutras (ritual texts) |
-| **Major Texts** | Baudhayana, Apastamba, Katyayana, Manava Sulbasutras |
-
-### B. Key Mathematical Contributions
-```
-🔺 Pythagorean Theorem (Pre-Pythagoras!):
-Baudhayana: "Diagonal of rectangle produces area = sum of squares of sides"
-→ Modern: d² = l² + b²
-
-🔲 Advanced Geometry:
-• "Squaring the circle" – Construct square equal to given circle
-• Right angle construction using ropes ("rope geometry")
-• Approximation of √2 = 1.4142156 (actual: 1.4142135...)
-
-📐 Practical Applications:
-• Altars in specific shapes: falcon, wheel, tortoise
-• Exact area preservation during shape transformation
-• Measurement units: aṅgula, aratni, yojana
-```
-
-### C. Significance
-```
-✅ Integration: Ritual practice + Mathematical precision = Geometric innovation
-✅ Legacy: Foundation for Indian mathematics; influenced later astronomers
-✅ Method: Empirical problem-solving driven by religious requirements
-```
+1. Drag **Element Scope** → Double-click → Indicate the UI element
+2. Inside "Do" sequence: Add all activities for that element
+   - Example: Type Into → Click → Get Text → All on same element
+3. Robot attaches once → performs all actions → detaches
 
 ---
 
-## III. KATAPAYADI SYSTEM (Number Encoding)
+### Find Children (Detailed Steps)
+**Use when**: You need all items inside a container (like list items)
 
-### A. What It Is
-```
-🔢 Traditional Indian method: Encode numbers using Sanskrit syllables/letters
-🎯 Purpose: Memorize complex astronomical/mathematical data via poetry
-```
-
-### B. How It Works
-| Component | Rule |
-|-----------|------|
-| **Consonants** | ka, kha, ga, gha, ṅa = 1,2,3,4,5; ca, cha, ja, jha, ña = 6,7,8,9,0; etc. |
-| **Vowels** | No numerical value (only support pronunciation) |
-| **Reading Order** | Digits read RIGHT-TO-LEFT in some conventions |
-
-### C. Examples
-```
-🔹 Word: kaṭapayādi itself
-   ka=1, ṭa=1, pa=1, ya=1 → Number: 1111
-
-🔹 Aryabhata's Earth rotations in a yuga:
-   Encoded as poetic verse → Decoded: 1,582,237,500 rotations
-
-🔹 Memory Aid: "Sky" = khā → kha=0 → Encodes zero elegantly
-```
-
-### D. Significance
-```
-✅ Ingenuity: Language + Mathematics + Memory techniques fused
-✅ Preservation: Complex data transmitted orally across generations
-✅ Modern Parallel: Similar to mnemonic devices in cognitive science
-```
-
-> 🧠 **Mnemonic for Consonant Groups**: "Ka-Kha-Ga" = 1-2-3; "Ca-Cha-Ja" = 6-7-8
+1. Drag **Find Children** → Double-click → Indicate parent element
+2. Create variable: Type = `IEnumerable<UiElement>`
+3. In "Children" property → Assign your variable
+4. Add **For Each** activity → Expression = your children variable
+5. Inside loop: Process each child element
 
 ---
 
-## IV. ENGINEERING IN VEDAS + SANSKRIT IN COMPUTING
+## 4. Techniques for Waiting for a Control
 
-### A. Engineering Concepts in Vedas
-```
-📜 Sources: Yajurveda, Atharvaveda, Sulbasutras
-🔧 Areas Covered:
-• Construction: Geometry, measurement systems (aṅgula, yojana)
-• Metalworking: Smelting, alloying techniques
-• Carpentry: Joinery, timber selection
-• Water Management: Wells, drainage, irrigation
-• Village Planning: Cardinal direction alignment for sunlight/ventilation
+### Why wait for controls?
+- Applications take time to load
+- Robot may act too fast → element not ready → error
+- Waiting ensures element is stable before action
 
-🏗️ Practical Example:
-Vedic altars = Multi-layer brick structures with precise shapes/orientations
-→ Required advanced spatial planning + quality control
-```
+### Three Waiting Techniques:
 
-### B. Shilpa Shastras (Architectural Engineering Manuals)
-| Domain | Guidelines |
-|--------|-----------|
-| **Structural Engineering** | Load-bearing calculations, foundation depth ratios, wooden dowels for earthquake flexibility, drainage systems |
-| **Material Science** | Stone selection (granite=load-bearing, marble=carving), timber seasoning (water soak + shade dry), mortar prep (lime+sand+jaggery+bel fruit) |
-| **City Planning** | Grid layouts (daṇḍaka), street width ∝ building height, zoning (residential/commercial/religious), pollution control (tanneries downwind) |
-| **Architectural Geometry** | Padavinyasa mandala (64/81-square grid) for space allocation + cosmic harmony |
+#### A. Wait Element Vanish
+**Use when**: You want to wait until element DISAPPEARS
 
-### C. Sanskrit Adaptability in Computer Languages
-```
-🧠 Pāṇini's Aṣṭādhyāyī (c. 5th BCE) = Rule-based grammar system
-• Sūtras (rules) + Meta-rules + Ordered operations
-• Comparable to: Backus-Naur Form (BNF) for programming languages
+**Steps**:
+1. Drag **Wait Element Vanish** → Set as Start node
+2. Double-click → Click "Indicate on screen" → Click element that should vanish
+3. Robot waits until that element is gone → then continues
+4. Optional: Set timeout in Properties (default = 30 seconds)
 
-💻 Modern Computing Parallels:
-• Unambiguous syntax → Ideal for NLP/AI parsing
-• Fixed SOV structure + inflections → Removes ambiguity
-• Generative grammar → Similar to algorithmic language generation
+#### B. Wait Image Vanish
+**Use when**: You want to wait until an IMAGE disappears
 
-🔗 Applications:
-• Sanskrit Heritage Engine (computational linguistics)
-• AI-based translators using Pāṇinian models
-• Knowledge representation + semantic analysis research
+**Steps**: Same as above, but indicate an image instead of element
+- Useful for loading spinners, splash screens
 
-✅ Key Insight: Ancient grammatical precision = Modern computational efficiency
-```
+#### C. Wait Attribute
+**Use when**: You want to wait until element's attribute equals specific text
+
+**Steps**:
+1. Drag **Wait Attribute** → Set as Start node
+2. Double-click → Fill three fields:
+   - **Element**: Indicate the UI element
+   - **Attribute**: Name of attribute (e.g., "Enabled", "Visible")
+   - **Value**: Expected value (e.g., "True", "Ready")
+3. Robot waits until attribute matches value → then continues
 
 ---
 
-## V. HINDU CALENDAR (Lunisolar System)
+## 5. Act on Controls: Mouse and Keyboard Activities
 
-### A. Core Structure
-```
-🌙 Lunar Months + ☀️ Solar Alignment = Lunisolar calendar
-🎯 Purpose: Determine festivals, rituals, agricultural activities
-```
+### Mouse Activities (3 types)
 
-### B. Key Components (Memory: "T-N-Y-K")
-| Component | Definition | Significance |
-|-----------|-----------|-------------|
-| **Tithi** (Lunar Day) | Time for Sun-Moon longitudinal angle to increase by 12° | 30 tithis/month; 19-26 hrs each; Shukla/Krishna Paksha; ritual timing |
-| **Nakshatra** (Lunar Mansion) | 27 (or 28) ecliptic segments named after stars | Moon stays ~1 day/nakshatra; determines auspicious times; basis of Jyotiṣa |
-| **Yoga** (Solar-Lunar Combo) | (Sun longitude + Moon longitude) ÷ 27 parts (each 13°20') | 27 yogas; used for timing specific rituals; combined celestial measure |
-| **Karana** (Half-Tithi) | Each tithi split into 2 karanas | 11 karanas total (4 fixed + 7 movable); refines moment selection for ventures |
+#### A. Click Activity
+**Use when**: You need to click a button, link, or any clickable element
 
-### C. Calendar Adjustments
-```
-🔄 Adhika Māsa (Extra Month):
-• Problem: 12 lunar months ≈ 354 days (11 days short of solar year)
-• Solution: Add extra month ~every 2.5 years to align seasons
+**Steps**:
+1. Search "mouse" in Activities panel → Drag **Click** activity
+2. Right-click → "Set as Start node"
+3. Double-click → Click "Indicate on screen" → Click target element
+4. Optional: In Properties, set ClickType (Single, Double, Right)
+5. Click **Run** → Robot clicks the element
 
-📅 Eras Used:
-• Vikrama Samvat (57 BCE)
-• Śaka Samvat (78 CE) → National calendar of India
-• Kali Yuga (3102 BCE)
+#### B. Double-Click Activity
+**Use when**: You need to double-click (like opening a file)
 
-🎉 Festival Examples:
-• Diwali = New moon of Kārtika
-• Holi = Full moon of Phālguna
-• Navarātri = Bright half of Āśvina
-```
+**Steps**: Same as Click, but use **Double Click** activity instead
 
-> 🧠 **Mnemonic for Components**: "Tithi-Nakshatra-Yoga-Karana" → "Time-Navigation-Yearly-Knowledge-Adjustment"
+#### C. Hover Activity
+**Use when**: You need to hover over element (to show tooltip/menu)
+
+**Steps**:
+1. Drag **Hover** activity → Set as Start node
+2. Double-click → Indicate element to hover over
+3. Robot moves mouse over element → waits briefly → continues
 
 ---
 
-## VI. SIX PRAMĀṆAS (Nyaya Epistemology)
+### Keyboard Activities (3 types)
 
-### A. Overview
-```
-🔍 Pramāṇa = Valid means of knowledge (epistemological foundation)
-📚 Nyaya System recognizes SIX pramāṇas for rational inquiry
-```
+#### A. Send Hotkey
+**Use when**: You need to press keyboard shortcuts (Ctrl+C, Enter, Arrow keys)
 
-### B. The Six Pramāṇas (Quick Table)
-| Pramāṇa | Meaning | Example | Key Feature |
-|---------|---------|---------|------------|
-| **Pratyakṣa** (Perception) | Direct sensory contact | Seeing fire | Most basic; external (5 senses) + internal (mind) |
-| **Anumāna** (Inference) | Knowledge from mark (liṅga) | Smoke → Fire | 5 parts: proposition, reason, example, application, conclusion |
-| **Upamāna** (Comparison) | Knowledge by analogy | "Buffalo is like cow" → Identify buffalo | Learning through similarity |
-| **Śabda** (Verbal Testimony) | Reliable word from trustworthy source (āpta) | Scriptures, expert advice | Requires speaker competence + honesty |
-| **Arthāpatti** (Postulation) | Presupposition to explain inconsistency | "Alive but not home" → Must be elsewhere | Resolves apparent contradictions |
-| **Anupalabdhi** (Non-perception) | Knowledge of absence | "Pot is NOT on table" | Added by later Nyaya; knows negation |
+**Steps**:
+1. Search "keyboard" → Drag **Send Hotkey** → Set as Start
+2. Double-click → Indicate target window/page
+3. In Properties:
+   - Check boxes for modifier keys (Ctrl, Alt, Shift)
+   - Select main key from dropdown (Enter, Down, Esc, etc.)
+4. Click **Run** → Robot sends the key combination
 
-### C. Comparison with Western Epistemology
-```
-✅ Empiricism (Locke/Hume): Only perception valid → Nyaya adds inference + testimony
-✅ Rationalism (Descartes): Reason primary → Nyaya balances perception + inference equally
-✅ Testimony: Modern epistemology now recognizes testimony → Nyaya had sophisticated āpta theory
-✅ Unique Nyaya Contributions:
-   • Arthāpatti: Handles contradictions via postulation
-   • Anupalabdhi: Systematic knowledge of absence/negation
-```
+#### B. Type Into
+**Use when**: You need to type text into a textbox/field
 
-> 🧠 **Mnemonic for Six Pramāṇas**: "P-A-U-S-A-A" → **P**erception, **A**numāna, **U**pamāna, **S**habda, **A**rthāpatti, **A**nupalabdhi
+**Steps**:
+1. Drag **Type Into** → Double-click → Indicate where to type
+2. In Text property: Type your text or variable name
+3. Optional: Click "+" icon to add special keys (Enter, Tab, etc.)
+4. Click **Run** → Robot types your text
 
----
+#### C. Type Secure Text
+**Use when**: You need to type passwords/sensitive data securely
 
-## VII. SCIENTIFIC METHOD IN AYURVEDA
+**Steps**:
+1. Create variable: Type = `SecureString`
+2. Drag **Type Secure Text** → Double-click → Indicate target field
+3. In SecureText property: Assign your SecureString variable
+4. Robot types text without showing it in logs/screens
 
-### A. Ayurvedic Therapeutic Process (Memory: "O-D-E-T-V")
-```
-1️⃣ Observation (Darśana):
-   • Examine tongue, skin, eyes, pulse, stool, urine
-   • Assess symptoms systematically
-
-2️⃣ Diagnosis (Nidāna):
-   • Identify cause: diet, lifestyle, environment, doṣa imbalance
-   • Classify disease per Ayurvedic framework
-
-3️⃣ Experimentation (Testing):
-   • Charaka Saṃhitā: Test drug on healthy → small patient groups → compare controls
-   • Early form of clinical trial methodology
-
-4️⃣ Treatment (Cikitsā):
-   • Prescribe based on empirical knowledge + logical reasoning
-   • Includes: diet modification, lifestyle changes, herbs, Pañcakarma
-
-5️⃣ Validation (Self-correction):
-   • If treatment fails → Re-examine diagnosis, drug quality, dosage, compliance
-   • Iterative improvement approach
-```
-
-### B. Key Features of Ayurvedic Scientific Method
-```
-✅ Empirical: Based on observation + experience, not dogma
-✅ Logical: Reasoning guides diagnosis + treatment selection
-✅ Systematic: Standardized examination protocols
-✅ Self-correcting: Failure triggers re-evaluation
-✅ Holistic: Considers physical, mental, environmental factors
-```
-
-> ✅ **Modern Parallel**: Ayurvedic method ≈ Hypothetico-deductive scientific method
+> 🔐 **Note**: In enterprise, use **Get Credential** activity with Orchestrator for secure password handling
 
 ---
 
-## VIII. FALLACIES (HETVĀBHĀSA) IN NYAYA LOGIC
+## 6. Working with UiExplorer
 
-### A. Definition
-```
-❌ Hetvābhāsa = "Fallacious reason" – Errors in inference due to faulty logic
-🎯 Purpose: Classify reasoning errors to strengthen valid argumentation
-```
+### What is UiExplorer?
+- Advanced tool to **view and edit selectors**
+- Used when normal selector fails (e.g., window title changes)
+- Shows all attributes of a UI element (title, class, app, etc.)
 
-### B. Five Main Fallacies (Memory: "S-V-P-S-B")
-| Fallacy | Meaning | Example | Why Invalid |
-|---------|---------|---------|------------|
-| **Savyabhicāra** (Inconsistent Reason) | Reason present but also absent in similar cases | "Mirage has smoke but no fire" → Smoke≠always fire | No invariable concomitance (vyāpti) |
-| **Viruddha** (Contradictory Reason) | Reason proves opposite of proposition | "Sound is eternal because produced" → Production implies non-eternal | Reason contradicts conclusion |
-| **Prakaraṇasama** (Counterbalanced) | Reason as doubtful as proposition itself | Circular reasoning with equal uncertainty | No net gain in certainty |
-| **Sādhyasama** (Unproved Reason) | Reason itself needs proof | Assuming what needs to be proven | Begging the question |
-| **Bādhita** (Contradicted Reason) | Reason contradicted by stronger pramāṇa | "Fire is cold because substance" → Perception says fire is hot | Overridden by direct evidence |
+### When to use UiExplorer?
+**Example Problem**: 
+- Robot types in Notepad titled "Untitled - Notepad"
+- You save file as "test.txt" → title changes to "test - Notepad"
+- Robot fails next time because selector still looks for "Untitled"
 
-### C. Significance in Logical Development
-```
-✅ Practical Toolkit: Helps debaters identify argument weaknesses
-✅ Promotes Rigor: Forces scholars to ensure valid vyāpti (invariable connection)
-✅ Cultural Impact: Influenced legal debates + scientific disputations in India
-✅ Modern Relevance: Parallels fallacy classification in Western logic (e.g., ad hominem, straw man)
-```
+### Step-by-Step: Fix Selector with UiExplorer
+1. Double-click the failing activity (e.g., Type Into)
+2. In Properties panel → Expand "Target" → Find "Selector" property
+3. Click dotted icon next to Selector → Click "Open in UiExplorer"
+4. UiExplorer window opens → Shows selector code like:
+   ```
+   <wnd app='notepad.exe' title='Untitled - Notepad' ... />
+   ```
+5. Find the changing attribute (e.g., `title='Untitled - Notepad'`)
+6. Edit it to be flexible:
+   - Option A: Use wildcard: `title='* - Notepad'` (* matches any text)
+   - Option B: Use new title: `title='test - Notepad'`
+7. Click "Validate" → If green checkmark, click "Apply"
+8. Robot now works with updated selector
 
-> 🧠 **Mnemonic**: "Some Very Poor Scholars Blunder" → **S**avyabhicāra, **V**iruddha, **P**rakaraṇasama, **S**ādhyasama, **B**ādhita
+### Wildcard Characters in Selectors:
+| Symbol | Meaning | Example |
+|--------|---------|---------|
+| `*` (asterisk) | Replaces any number of characters | `title='Report*'` matches "Report1", "Report_Final" |
+| `?` (question mark) | Replaces exactly one character | `file='doc?.pdf'` matches "doc1.pdf", "docA.pdf" |
 
----
-
-## IX. TARKA: INDUCTION & DEDUCTION IN NYAYA
-
-### A. Core Concepts
-```
-🔍 Tarka = Reasoning process for validating knowledge
-🔄 Two Modes: Induction (specific→general) + Deduction (general→specific)
-```
-
-### B. Induction (Generalization)
-```
-📊 Process: Observe specific cases → Establish universal rule
-🔹 Example: 
-   • See smoke+fire in kitchen, forest, hill
-   • Conclude: "Wherever there is smoke, there is fire"
-🔹 Nyaya Term: Vyāpti (invariable concomitance) established via induction
-```
-
-### C. Deduction (Five-Member Syllogism)
-```
-🧱 Structure (Nyaya Syllogism):
-1️⃣ Proposition (Pratijñā): "The hill has fire"
-2️⃣ Reason (Hetu): "Because it has smoke"
-3️⃣ Example (Udāharaṇa): "Wherever smoke, there is fire, like kitchen"
-4️⃣ Application (Upanaya): "The hill has smoke, invariably accompanied by fire"
-5️⃣ Conclusion (Nigamana): "Therefore, the hill has fire"
-
-✅ Key Feature: Each step builds logical certainty; example grounds abstract rule in experience
-```
-
-### D. Hypothetical Reasoning (Tarka Proper)
-```
-🤔 "What-if" Analysis:
-• When fact uncertain → Imagine alternatives → Eliminate contradictions
-• Example: To test "Is sound eternal?" → Hypothesize "If eternal, then no cause for occurrence after silence" → Contradiction observed → Conclude non-eternal
-
-✅ Modern Parallel: Hypothetico-deductive method + Inference to best explanation
-```
-
-> 🧠 **Memory Flow**: Observation → Induction (Vyāpti) → Deduction (Syllogism) → Conclusion
+> 💡 **Pro Tip**: Use "Attach to live element" in selector window to auto-fix changing attributes
 
 ---
 
-## X. AYURVEDIC BIOLOGY
+## 7. Handling Events
 
-### A. Core Framework: Three Doṣas
-| Doṣa | Elements | Functions | Imbalance Symptoms |
-|------|----------|-----------|-------------------|
-| **Vāta** | Ākāśa + Vāyu | Movement, nerve impulses, respiration, circulation, excretion | Anxiety, constipation, joint pain, insomnia |
-| **Pitta** | Agni + Jala | Metabolism, digestion, temperature, vision, skin color | Ulcers, inflammation, heartburn, anger |
-| **Kapha** | Pṛthvī + Jala | Structure, lubrication, immunity, growth, joint stability | Congestion, obesity, lethargy, edema |
+### What is an Event?
+- An event = something that happens (click, keypress, image change)
+- Robot can **listen for events** → trigger actions when event occurs
 
-### B. Seven Dhātus (Tissues) – Sequential Formation
-```
-🔄 Metabolic Chain: 
-Rasa (plasma) → Rakta (blood) → Māṃsa (muscle) → Meda (fat) → Asthi (bone) → Majjā (marrow) → Śukra (reproductive)
+### Types of Events:
 
-✅ Principle: Each dhātu nourishes the next; weakness in one affects all downstream
-```
+#### A. Element Triggering Events
+**1. Click Trigger**
+- Fires when specified element is clicked
 
-### C. Agni & Malas
-```
-🔥 Agni (Digestive Fire):
-• 13 types; central = Jatharagni (stomach/small intestine)
-• Balanced agni = Health; Weak agni → Ama (toxic undigested material) = Disease root
+**Steps**:
+1. Drag **Monitor Events** activity → Double-click
+2. Inside Monitor Events: Drag **Click Trigger**
+3. In Click Trigger: Indicate the element to watch
+4. In "Event Handler" section: Add activities to run when clicked
+   - Example: Message Box with "Button was clicked!"
+5. Robot monitors → when element clicked → runs handler
 
-🗑️ Malas (Waste Products):
-• Feces, urine, sweat
-• Proper elimination essential for health
-```
+**2. Key Press Trigger**
+- Fires when keys are pressed on specified element
 
-### D. Mind-Consciousness Integration
-```
-🧠 Mental Qualities (Guṇas):
-• Sattva: Clarity, harmony
-• Rajas: Activity, passion  
-• Tamas: Inertia, dullness
+**Steps**: Same as Click Trigger, but use **Key Press Trigger**
+- Specify which key(s) to watch for (e.g., Enter, Ctrl+S)
 
-🕉️ Ātman (Self): Ultimate health includes spiritual well-being + self-realization
-```
+#### B. Image Triggering Events
+**Click Image Trigger**
+- Fires when a specific IMAGE is clicked
 
-> 🧠 **Mnemonic for Dhātus**: "Really Ready Men Make Awesome Marrow Success" → Rasa, Rakta, Māṃsa, Meda, Asthi, Majjā, Śukra
+**Steps**:
+1. Inside Monitor Events: Drag **Click Image Trigger**
+2. Indicate the image to watch (screenshot of button/icon)
+3. Add handler activities → Run when image is clicked
 
----
+#### C. System Triggering Events
+**1. Hotkey Trigger**
+- Fires when special keyboard shortcut is pressed anywhere
 
-## XI. DEFINITION OF HEALTH (AYURVEDA)
+**Steps**:
+1. Inside Monitor Events: Drag **Hotkey Trigger**
+2. Specify key combination (e.g., Ctrl+Alt+R)
+3. Add handler → Runs when hotkey pressed
 
-### A. Classical Definition (Suśruta Saṃhitā)
-```
-📜 Sanskrit Verse:
-"Samadoṣa samāgniśca samadhātumalakriyaḥ |
-Prasannātmendriyamanāḥ svastha ityabhidhīyate ||"
+**2. Mouse Trigger**
+- Fires when mouse button is pressed
 
-🔤 Translation:
-"A person is svastha (healthy) when:
-• Doṣas are in equilibrium
-• Agni (digestive fire) is balanced
-• Seven dhātus function properly
-• Malas (wastes) eliminated normally
-• Ātman (self), indriyas (senses), manas (mind) are in bliss"
-```
+**Steps**:
+1. Inside Monitor Events: Drag **Mouse Trigger**
+2. Choose button: Left / Middle / Right
+3. Add handler → Runs on mouse click
 
-### B. Holistic Nature
-```
-✅ Multi-dimensional Health:
-• Physical: Doṣa balance, dhātu function, waste elimination
-• Mental: Clear mind, emotional stability
-• Spiritual: Self-realization, inner peace
+**3. System Trigger**
+- Fires on ANY keyboard/mouse event (most flexible)
 
-✅ Beyond Disease-Absence:
-• Positive well-being + Harmony with environment
-• Health = Dynamic equilibrium, not static state
+**Steps**:
+1. Inside Monitor Events: Drag **System Trigger**
+2. In "Trigger Input": Choose event type (KeyDown, MouseUp, etc.)
+3. Add handler → Runs on specified system event
 
-✅ Modern Relevance:
-• Aligns with WHO definition: "Complete physical, mental, social well-being"
-• Anticipates biopsychosocial model of health
-```
-
-> ✅ **Key Insight**: Ayurvedic health = Integrated system where body, mind, spirit, environment interact dynamically
+> ⚠️ **Important**: Always use **Monitor Events** as container for any trigger activity
 
 ---
 
-## XII. PRACTICE QUESTIONS – Quick Answers
+## 8. Revisit Recorder
 
-### 1. Heliocentric Model as Paradigm Shift
-```
-✅ Process: Geocentric (tradition) → Observation (Galileo) → Math modeling (Kepler) → Theoretical synthesis (Newton)
-✅ Significance: Demonstrates scientific revolution: Evidence + Reasoning > Dogma
-✅ Legacy: Foundation for modern astronomy + physics; model for evidence-based inquiry
-```
+### Four Types of Recording in UiPath:
 
-### 2. Katapayadi as Mnemonic Tool
-```
-✅ Working: Consonants encode digits; vowels neutral; digits read right-to-left
-✅ Examples: 
-   • kaṭapayādi = 1111
-   • Aryabhata's Earth rotations encoded poetically = 1,582,237,500
-✅ Integration: Language + Math + Memory = Efficient knowledge transmission across generations
-```
-
-### 3. Six Pramāṇas vs. Western Epistemology
-```
-✅ Comparison:
-   • Empiricism: Only perception → Nyaya adds inference + testimony
-   • Rationalism: Reason primary → Nyaya balances perception+inference
-   • Testimony: Modern recognition parallels Nyaya's āpta theory
-✅ Unique Nyaya: Arthāpatti (postulation) + Anupalabdhi (non-perception) address gaps in Western theories
-```
-
-### 4. Tarka & Scientific Method Parallel
-```
-✅ Induction: Specific observations → Universal rule (vyāpti) ≈ Scientific generalization
-✅ Deduction: Five-member syllogism ≈ Hypothetico-deductive testing
-✅ Hypothetical reasoning: "What-if" elimination ≈ Modern inference to best explanation
-✅ Result: Nyaya logic ≈ Structured scientific reasoning framework
-```
-
-### 5. Doṣa Theory as Systems Biology
-```
-✅ Vāta ≈ Nervous/autonomic system (movement, sensation, electrolyte balance)
-✅ Pitta ≈ Metabolic/endocrine system (digestion, thermoregulation, enzymes)
-✅ Kapha ≈ Structural/immune system (extracellular matrix, mucous, anabolic hormones)
-✅ Holistic View: Ayurveda anticipated network physiology – not reductionist but systemic
-```
-
-### 6. Scientific Method in Charaka Saṃhitā
-```
-✅ Controlled observation: Test drugs on healthy persons under controlled conditions first
-✅ Hypothesis testing: Debates (tattvaśāstra) with thesis-challenge-evidence structure ≈ Peer review
-✅ Iterative improvement: "Physician who fails must re-examine diagnosis/treatment"
-✅ Bias reduction: Attending physician ≠ drug formulator to minimize outcome assessment bias
-```
+| Recorder | Best For | Selector Type | Output Structure |
+|----------|----------|---------------|-----------------|
+| **Basic** | Single-window apps, simple actions | Full Selector | Activities directly in Sequence |
+| **Desktop** | Desktop apps, multiple actions | Partial Selector | Activities inside Attach Window |
+| **Web** | Web browsers (Chrome, Firefox, etc.) | Partial Selector | Activities inside Attach Browser |
+| **Citrix** | Remote desktop, virtual apps | Image/Text based | Click Image, Click Text activities |
 
 ---
 
-## 🧠 MEMORY TIPS & MNEMONICS
+### Basic Recording (Step-by-Step)
+**Use for**: Simple, single-window tasks
 
-### Heliocentric Scientists Timeline
-**"C-G-K-N"** → **C**opernicus → **G**alileo → **K**epler → **N**ewton
+1. Click "Recording" icon → Choose "Basic"
+2. Perform actions in target app (click, type, etc.)
+3. Press Esc → Click "Save and Exit"
+4. Result: Sequence with activities + full selectors
+5. Connect to Start → Run
 
-### Sulbasutras Contributions
-**"P-S-R"** → **P**ythagorean theorem, **S**quaring circle, **R**ope geometry + √2 approximation
-
-### Katapayadi Encoding
-**"C-V-R"** → **C**onsonants=values, **V**owels=neutral, **R**ight-to-left reading
-
-### Hindu Calendar Components
-**"T-N-Y-K"** → **T**ithi, **N**akshatra, **Y**oga, **K**arana
-
-### Six Pramāṇas
-**"P-A-U-S-A-A"** → **P**ratyakṣa, **A**numāna, **U**pamāna, **S**habda, **A**rthāpatti, **A**nupalabdhi
-
-### Five Fallacies (Hetvābhāsa)
-**"S-V-P-S-B"** → **S**avyabhicāra, **V**iruddha, **P**rakaraṇasama, **S**ādhyasama, **B**ādhita
-
-### Ayurvedic Biology Framework
-**"D-D-A-M"** → **D**oṣas (3), **D**hātus (7), **A**gni, **M**alas
-
-### Health Definition Components
-**"D-A-D-M-S"** → **D**oṣa balance, **A**gni balanced, **D**hātu function, **M**ala elimination, **S**elf/senses/mind bliss
+> 📌 Full Selector = Contains ALL attributes to identify element (very specific)
 
 ---
+
+### Desktop Recording (Step-by-Step)
+**Use for**: Desktop apps with multiple windows/actions
+
+1. Click "Recording" → Choose "Desktop"
+2. Perform actions across windows
+3. Press Esc → Save and Exit
+4. Result: Activities nested inside **Attach Window** container
+5. Partial selectors = hierarchical (parent→child structure)
+
+> 📌 Partial Selector = More flexible, uses relative positioning
+
+---
+
+### Web Recording (Step-by-Step)
+**Use for**: Automating web browsers
+
+**Pre-requisite**: Install UiPath browser extension
+- Click "Setup" icon → "Setup Extensions" → Choose browser → Install
+
+**Recording Steps**:
+1. Open target website in browser
+2. Click "Recording" → Choose "Web"
+3. Perform web actions (search, click, login, etc.)
+4. Press Esc → Save and Exit
+5. Result: Activities inside **Attach Browser** container
+6. Connect to Start → Ensure browser is on correct page before running
+
+---
+
+### Citrix Recording (Step-by-Step)
+**Use for**: Remote desktop, virtual machines, Citrix environments
+
+**Why special?**: In Citrix, robot sees only images (not UI elements)
+
+**Available Activities**:
+- Click Image, Click Text, Type, Select & Copy, Screen Scraping, Element, Text, Image
+
+**Steps**:
+1. Click "Recording" → Choose "Citrix"
+2. Perform actions in remote session
+3. Robot records based on:
+   - **Image position** (where you clicked)
+   - **Text recognition** (what text you typed)
+4. Press Esc → Save and Exit
+5. Result: Activities using image/text-based selectors
+
+> ⚠️ Citrix automation is less reliable → Always test thoroughly
+
+---
+
+### Data Scraping (Bonus: Extract Web Data)
+**Use when**: You need to extract lists/tables from websites
+
+**Step-by-Step: Scrape Amazon Book Names**
+1. Open Amazon → Search for books
+2. In UiPath: Click "Data Scraping" icon (top-left)
+3. Wizard opens → Click "Next"
+4. Pointer appears → Click FIRST book name on page
+5. Wizard asks for SECOND similar element → Click second book name
+6. Configure column: Name = "BookName" → Click "Next"
+7. Preview shows extracted names → If satisfied, click "Finish"
+8. Optional: Click "Extract correlated data" to add more columns (price, author)
+9. Optional: If multiple pages → Click "Yes" → Indicate "Next Page" button
+10. Result: Auto-generated sequence + DataTable variable with scraped data
+11. Use "Output Data Table" or "For Each Row" to process results
+
+---
+
+## 9. Screen Scraping
+
+### What is Screen Scraping?
+- Method to **extract text** from documents, websites, PDFs
+- Three methods available: Full Text, Native, OCR
+
+### Comparison of Three Methods:
+
+| Feature | Full Text | Native | OCR |
+|---------|-----------|--------|-----|
+| **Speed** | 10/10 (Fastest) | 8/10 | 3/10 (Slowest) |
+| **Accuracy** | 100% | 100% | ~98% |
+| **Background Execution** | ✅ Yes | ❌ No | ❌ No |
+| **Extract Text Position** | ❌ No | ✅ Yes | ✅ Yes |
+| **Extract Hidden Text** | ✅ Yes | ❌ No | ❌ No |
+| **Works in Citrix** | ❌ No | ❌ No | ✅ Yes |
+
+---
+
+### Step-by-Step: Use Screen Scraping Wizard
+1. Open target app/website with text to extract
+2. In UiPath: Click "Screen Scraping" icon
+3. Indicate area containing text
+4. Wizard tries methods in order:
+   - First: Automatic (tries best method)
+   - If fails: Try Full Text → Native → OCR
+5. When text appears in preview → Click "Finish"
+6. Result: Extracted text stored in variable (usually String or DataTable)
+
+> 💡 **Tip**: If Automatic fails, manually select method that works for your content
+
+---
+
+## 10. When to Use OCR
+
+### What is OCR?
+- **Optical Character Recognition** = Technology to read text from images/scanned docs
+- Used when normal methods (Get Text, Type Into) FAIL
+
+### When to choose OCR?
+✅ Use OCR when:
+- Text is in an **image** (screenshot, photo)
+- Document is **scanned PDF** (not selectable text)
+- Application is **Citrix/remote** (only images visible)
+- Text is in **non-standard font** or handwritten
+- Normal activities return empty/wrong text
+
+❌ Don't use OCR when:
+- Text is already selectable (use Get Text instead)
+- You need 100% accuracy (OCR is ~98%)
+- Speed is critical (OCR is slow)
+
+---
+
+## 11. Types of OCR Available
+
+### Two Built-in OCR Engines:
+
+#### A. Microsoft OCR (MODI)
+**Advantages**:
+- Multiple languages supported by default
+- Better for **large text areas**
+- Good for standard documents
+
+**Limitations**:
+- Less accurate on small/complex text
+- Requires Windows components
+
+#### B. Google OCR (Tesseract)
+**Advantages**:
+- Better for **small text areas**
+- Supports color inversion (dark mode)
+- Can filter allowed characters
+- Better for non-Latin scripts
+
+**Limitations**:
+- Slower on large areas
+- May need language packs installed
+
+### Third-Party OCR: Abbyy
+- More advanced (handwriting, complex layouts)
+- Search "OCR" in Activities panel → If not found:
+  - Press Ctrl+P → Search "UiPath.Core.Activities" → Install package
+
+---
+
+## 12. How to Use OCR (Step-by-Step)
+
+### Example: Extract Text from Image
+1. Create Blank project → Drag **Flowchart**
+2. Search "OCR" → Drag **Get OCR Text** activity → Set as Start
+3. Double-click → Click "Indicate on screen"
+4. Draw box around text in image (e.g., Google image with text)
+5. In "Text" property: Click dotted icon → Create variable (e.g., `extractedText`, type: String)
+6. Drag **Message Box** → Connect to Get OCR Text
+7. In Message Box Text: Type `extractedText`
+8. Optional: In Get OCR Text Properties → Adjust "Scale" (1.0 = normal, 2.0 = zoomed for small text)
+9. Click **Run** → Message box shows extracted text
+
+> 🔧 **Pro Tip**: If text is small/blurry, increase Scale to 1.5 or 2.0 for better recognition
+
+---
+
+## 13. Avoiding Typical Failure Points
+
+### Common Problems & Solutions:
+
+#### Problem 1: Selector Fails When App Instance Changes
+**Cause**: Selector captures exact title/class, but these change between runs
+**Solution**:
+- Use wildcards: `title='Report*'` instead of `title='Report_2024'`
+- Or: Use "Attach to live element" in selector window
+
+#### Problem 2: Variable Scope Error
+**Cause**: Variable created inside Sequence/Loop → not accessible outside
+**Solution**:
+- When creating variable: In "Scope" dropdown, choose parent container (e.g., Flowchart)
+- Or: Move variable creation to higher scope
+
+#### Problem 3: Robot Acts Too Fast (Element Not Ready)
+**Cause**: App still loading → element not stable → action fails
+**Solution**:
+- Add **Delay** activity before action (e.g., `00:00:05` for 5 seconds)
+- Or: Use **Element Exists** to check before acting
+- Or: Use **Wait Attribute** to wait for "Enabled=True"
+
+#### Problem 4: Element May Not Exist
+**Cause**: Optional UI element sometimes missing → robot crashes
+**Solution**:
+- Wrap action in **Element Exists** + **If** condition
+- Example:
+  ```
+  Element Exists → Output: isFound (Boolean)
+  If isFound = True → Then: Perform action
+  Else → Log "Element not found, skipping"
+  ```
+
+#### Problem 5: Try/Catch for Unexpected Errors
+**Use when**: Action might fail for unknown reasons
+**Steps**:
+1. Drag **Try Catch** activity
+2. Inside "Try" block: Put suspicious activities
+3. Inside "Catch" block: Add error handling (Log Message, Retry, etc.)
+4. Robot tries actions → If error → Jumps to Catch → Handles gracefully
+
+#### Problem 6: Forgetting .ToString() Method
+**Cause**: Message Box expects String, but variable is Integer/Boolean
+**Solution**:
+- Always convert non-String variables: `myInt.ToString`, `myBool.ToString`
+- Example: Message Box Text = `count.ToString` (not just `count`)
+
+---
+
+
+# UNIT – V: Exception Handling, Debugging, and Logging
+## Exam Preparation Notes (Simple & Detailed)
+
+---
+
+## 1. Exception Handling
+
+### What is Exception Handling?
+- Exception handling = managing errors when a process/automation fails to execute
+- Best practice in UiPath: Use the **Try Catch** activity
+- Keeps your robot running smoothly even when unexpected errors occur
+
+### Structure of Try Catch Activity:
+A Try Catch block is divided into **4 main parts**:
+
+| Part | Purpose |
+|------|---------|
+| **Try Block** | Place your main/suspicious activities here (what you want to run) |
+| **Catch Block** | Runs ONLY if an error occurs in Try block. Handles the exception |
+| **Finally Block** | Runs ALWAYS, whether error occurred or not. Used for cleanup/completion messages |
+| **Exception Type** | Select which error to catch (e.g., `System.Exception` for general errors) |
+
+### Step-by-Step: Build a Try Catch Block
+1. Create Blank project → Drag **Flowchart** → Search **"Try Catch"** in Activities panel
+2. Drag Try Catch into Flowchart → Right-click → **Set as Start node**
+3. Double-click Try Catch → You'll see **Try**, **Catches**, and **Finally** sections
+4. **Inside Try**: Drag your main activities (e.g., Write Line, Click, etc.)
+5. **Inside Catches**: 
+   - Click **"Add new catch"** → Select exception type (usually `System.Exception`)
+   - Drag error-handling activity here (e.g., Message Box)
+   - In Message Box Text: type `exception.ToString` to display the actual error message
+6. **Inside Finally**: Drag completion activity (e.g., Message Box with `"Process completed"`)
+7. Click **Run** → If Try works → Finally runs. If Try fails → Catch runs → Then Finally runs
+
+> 💡 **Key Point**: Finally block guarantees execution, making it perfect for closing apps, logging, or showing completion status.
+
+---
+
+## 2. Common Exceptions and Ways to Handle Them
+
+### How to Handle Common Errors:
+
+| Exception | Cause | Simple Fix |
+|-----------|-------|------------|
+| **Unavailability of UI Element** | Web page loads slowly or elements change dynamically | Edit selector using wildcards (`*` or `?`) OR use **"Attach to live element"** |
+| **Runtime Exceptions** | Unexpected error during execution | Wrap workflow in **Try Catch** → Provide alternative steps in Catch block |
+| **Object reference not set to an instance of an object** | Variable missing a default value | Go to Variables panel → Add a **Default value** (e.g., `""` for String, `0` for Integer) |
+| **Index was outside bounds of array / Index out of range** | Trying to access array element that doesn't exist | Check array size before accessing → Use valid index numbers only |
+| **Image not found in provided timeout** | Screen resolution/theme changed, image doesn't match | Use **Indicate Anchor** to locate nearby stable element OR adjust timeout |
+| **Click Generic error** (Cannot use UI CONTROL API...) | Environment doesn't support Simulate Click or Send Window Messages | Uncheck **Simulate Click** OR **SendWindowMessages** in activity Properties |
+
+### Quick Fix Workflow for UI Errors:
+1. Identify failing activity
+2. Check selector → Replace changing attributes with `*` (matches any text) or `?` (matches one character)
+3. If still failing → Use **Anchor Base** or **Indicate Anchor**
+4. Wrap in **Try Catch** for safety
+
+---
+
+## 3. Logging and Taking Screenshots
+
+### What is Logging in UiPath?
+- Logging = recording workflow execution details for tracking, debugging, and auditing
+- UiPath uses **multi-process architecture**: Each workflow runs in separate executor managed by UI Robot. If one fails, others continue.
+
+### Types of Logging:
+| Type | Description |
+|------|-------------|
+| **Client Logging** | Logs stored locally on your machine. Configured via `NLog.config` file |
+| **Server Logging** | Logs automatically sent to UiPath Server (if configured) |
+
+### How to Access & Configure Logs:
+- **View logs**: In UiPath Studio → Click **EXECUTE** → Click **Open Logs**
+- **Default log folder**: `%LocalAppData%\UiPath\Logs`
+- **Log sources**: 
+  - Execution logging (workflow steps)
+  - Studio logging (Studio actions)
+  - Robot logging (Robot actions)
+- **Enable detailed auto-logging**: 
+  1. Open `UiRobot.exe.config` file
+  2. Find `<Switches>` section
+  3. Change `Log` value from `1` to `2`
+  4. Save → Restart Robot
+
+### Activities for Logging:
+| Activity | Use Case |
+|----------|----------|
+| **Log Message** | Logs info/warning/error to Output panel & log files (choose log level: Info, Warn, Error) |
+| **Write Line** | Writes text to Output panel only (good for quick debugging) |
+
+### Taking Screenshots:
+- Press **`Ctrl + PrtScrn`** anytime during execution to capture current screen
+- Useful for error reporting & debugging visual issues
+
+---
+
+## 4. Debugging Techniques
+
+### What is Debugging?
+- Testing workflow step-by-step to find & fix errors before full execution
+- UiPath provides tools in the **EXECUTE** ribbon menu
+
+### Four Main Debugging Techniques:
+
+#### A. Setting Breakpoints
+**Use when**: You want execution to stop at a specific point
+**Steps**:
+1. Click on any activity → Press `F9` OR click breakpoint icon in EXECUTE tab
+2. Red circle appears → Activity is now a breakpoint
+3. Run workflow → Execution pauses JUST BEFORE the breakpoint
+4. Use **Step Into** (executes current activity) or **Step Over** (skips to next)
+5. Click **Continue** to resume full execution
+
+#### B. Slow Step
+**Use when**: You want to watch each activity run slowly to spot timing issues
+**Steps**:
+1. Select activity → Click **Slow Step** in EXECUTE tab
+2. Execution speed reduces for that step
+3. Watch Output panel to track progress step-by-step
+
+#### C. Highlighting
+**Use when**: You want to visually see which activity is currently running
+**Steps**:
+1. In EXECUTE tab → Open **Options** menu
+2. Enable **Highlighting**
+3. During execution, active activity glows/highlights on Designer panel
+4. Helps track exact workflow path
+
+#### D. Break Activity
+**Use when**: You want to manually stop execution at a specific point during runtime
+**Steps**:
+1. Drag **Break** activity into workflow at desired location
+2. When execution reaches it → Robot pauses
+3. Click **Continue** to resume OR **Stop** to end execution completely
+
+> 💡 **Exam Tip**: Breakpoints = stop before activity. Slow Step = slow down execution. Highlighting = visual tracking. Break = manual pause/stop.
+
+---
+
+## 5. Collecting Crash Dumps
+
+### What are Crash Dumps?
+- Crash dump = file containing system info when UiPath Studio crashes
+- Helps developers diagnose why crash happened
+- Two types:
+  - **Full Dump**: Complete crash information (larger file)
+  - **Minidump**: Main crash information only (smaller file)
+
+### Identify Crashed Process:
+- Dialog box appears showing crash details
+- Common crashing processes: `UiStudio.exe`, `UiExplorer.exe`, `UiLauncher.exe`, or target application
+
+### Step-by-Step: Enable Crash Dumps
+1. Download enable file from official links:
+   - Full dump: `EnableFullDump.reg`
+   - Mini dump: `EnableMiniDump.reg`
+2. Double-click downloaded `.reg` file
+3. Click **Yes** to confirm (Administrator rights required)
+4. If crash occurs → Go to `%TEMP%` folder
+5. Look for `.dmp` file (e.g., `UiExplorer.exe.8537.dmp`)
+6. Share this file for troubleshooting
+
+### Step-by-Step: Disable Crash Dumps
+1. Download `DisableDump.reg` from official link
+2. Double-click file → Click **Yes** (Admin rights required)
+3. Crash dumps will no longer be generated
+
+> ⚠️ **Note**: Always run `.reg` files as Administrator. Dumps are saved in your Windows TEMP folder.
+
+---
+
+## 6. Error Reporting
+
+### How to Report Errors in UiPath?
+Depends on your UiPath edition:
+
+#### A. Enterprise Edition Customers
+**Steps**:
+1. Visit official technical support/contact page
+2. Fill out the simple error reporting form with:
+   - Your details
+   - Error description
+   - Steps to reproduce
+3. **Upload error file** (logs, crash dumps, screenshots)
+4. Click **Submit**
+5. UiPath support team will analyze and respond with solution
+
+#### B. Community Edition Customers
+- Community Edition is **free** → No direct technical support from UiPath
+- **How to get help**:
+  1. Visit **UiPath Forum** (`forum.uipath.com`)
+  2. Search for your error → Read existing solutions
+  3. If not found → Post new question with error details & screenshots
+  4. Check **Resources page** for tutorials & troubleshooting guides
+
+> 💡 **Pro Tip**: Always include workflow screenshots, error message text, and log files when asking for help. This speeds up solution finding.
